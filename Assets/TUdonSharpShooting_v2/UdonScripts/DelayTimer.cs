@@ -6,16 +6,18 @@ using VRC.Udon;
 
 public class DelayTimer : UdonSharpBehaviour
 {
-    [SerializeField] UdonSharpBehaviour[] targetUdons;
-    [SerializeField] string[] eventNames;
-
     int capacity;
+
+    UdonSharpBehaviour[] targetUdons;
     float[] delayTimes;
     float[] startTimes;
+    string[] eventNames;
 
-    private void Start()
+    public void SetTimerCapacity(int _capacity)
     {
-        capacity  = targetUdons.Length;
+        capacity = _capacity;
+        targetUdons = new UdonSharpBehaviour[capacity];
+        eventNames = new string[capacity];
         delayTimes = new float[capacity];
         startTimes = new float[capacity];
         for(int i = 0; i < capacity; i++)
@@ -24,18 +26,10 @@ public class DelayTimer : UdonSharpBehaviour
         }
     }
 
-    public void StartTimer(string eventName, float delay)
+    public void StartTimer(int index, UdonSharpBehaviour targetUdon, string eventName, float delay)
     {
-        int index = -1;
-        for(int i = 0; i < capacity; i++)
-        {
-            if(eventNames[i] == eventName)
-            {
-                index = i;
-                break;
-            }
-        }
-        if (index == -1) return;
+        targetUdons[index] = targetUdon;
+        eventNames[index] = eventName;
         startTimes[index] = Time.time;
         delayTimes[index] = delay;
     }

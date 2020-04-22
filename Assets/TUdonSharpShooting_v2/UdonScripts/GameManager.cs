@@ -7,6 +7,7 @@ using VRC.Udon;
 public class GameManager : UdonSharpBehaviour
 {
     [SerializeField] AudioManager audioManager;
+    [SerializeField] ScoreManager scoreManager;
 
     void Start()
     {
@@ -14,4 +15,5 @@ public class GameManager : UdonSharpBehaviour
     }
 
     public AudioManager GetAudioManager() { return audioManager; }
+    public ScoreManager GetScoreManager() { return scoreManager; }
 }

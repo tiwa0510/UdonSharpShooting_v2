@@ -1,5 +1,7 @@
 ﻿using UdonSharp;
 using UnityEngine;
+using VRC.Udon;
+using VRC.SDKBase;
 
 public class GunController : UdonSharpBehaviour
 {
@@ -8,10 +10,9 @@ public class GunController : UdonSharpBehaviour
     int bulletNumMax;
     int bulletNum;
 
+    [SerializeField] Bullet bullet;
     ResetTransform resetPosition;
     DelayTimer delayTimer;
-    ParticleSystem bullet;
-    ParticleSystem bulletEffect;
     GameManager gameManager;
     AudioManager audioManager;
 
@@ -19,8 +20,7 @@ public class GunController : UdonSharpBehaviour
     {
         resetPosition = GetComponent<ResetTransform>();
         delayTimer    = GetComponent<DelayTimer>();
-        bullet        = GetComponent<ParticleSystem>();
-        bulletEffect  = bullet.transform.GetChild(0).GetComponent<ParticleSystem>();
+        delayTimer.SetTimerCapacity(2);
     }
 
     public void InitData(int _playerID, int _ATK, int _bulletNumMax, GameManager _gameManager)
@@ -30,7 +30,9 @@ public class GunController : UdonSharpBehaviour
         bulletNumMax = _bulletNumMax;
         bulletNum    = _bulletNumMax;
         gameManager  = _gameManager;
+        //gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer, playerID);
         audioManager = gameManager.GetAudioManager();
+        bullet.InitData(this);
     }
 
     private void Update()
@@ -38,16 +40,15 @@ public class GunController : UdonSharpBehaviour
         if(Input.GetMouseButtonDown(0))
         {
             if (bulletNum <= 0) return;
-            bullet.Play();
+            bullet.Shot();
             ShotSE();
-            SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "ShotEffect");
 
             bulletNum--;
             Debug.Log(bulletNum);
             Debug.Log(bulletNumMax);
             if (bulletNum <= 0)
             {
-                delayTimer.StartTimer("Reload", 1);
+                delayTimer.StartTimer(0, this, "Reload", 1);
             }
         }
             
@@ -56,20 +57,14 @@ public class GunController : UdonSharpBehaviour
     public override void OnPickupUseDown()
     {
         if (bulletNum <= 0) return;
-        bullet.Play();
+        bullet.Shot();
         ShotSE();
-        SendCustomNetworkEvent( VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "ShotEffect");
 
         bulletNum--;
         if (bulletNum <= 0)
         {
-            delayTimer.StartTimer("Reload", 1);
+            delayTimer.StartTimer(0, this, "Reload", 1);
         }
-    }
-
-    public void ShotEffect()
-    {
-        bulletEffect.Play();
     }
 
     public void ShotSE()
@@ -96,7 +91,7 @@ public class GunController : UdonSharpBehaviour
 
     public override void OnDrop()
     {
-        delayTimer.StartTimer("ResetPosition", 3);
+        delayTimer.StartTimer(1, this, "ResetPosition", 3);
     }
 
     public void ResetPosition()
@@ -109,4 +104,5 @@ public class GunController : UdonSharpBehaviour
     public int GetATK()          { return ATK; }
     public int GetBulletNum()    { return bulletNum; }
     public int GetBulletNumMax() { return bulletNumMax; }
+    public ScoreData GetScoreData() { return gameManager.GetScoreManager().GetData(playerID); }
 }

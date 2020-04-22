@@ -14,6 +14,11 @@ public class ScoreData : UdonSharpBehaviour
         scoreData = value;
     }
 
+    public void AddValue(int value)
+    {
+        scoreData += value;
+    }
+
     public int GetValue()
     {
         return scoreData;

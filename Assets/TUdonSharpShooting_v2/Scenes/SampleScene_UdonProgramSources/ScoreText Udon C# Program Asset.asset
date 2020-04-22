@@ -14,12 +14,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 044b189a3ef29934aa45236cd51e3d13,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
-    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    __0_intnl_returnTarget_UInt32:
+  udonAssembly: ".data_start\r\n\r\n    .export playerID\r\n    .export gameManager\r\n\r\n
+    \   __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName:
+    %SystemString, null\r\n    playerID: %SystemInt32, null\r\n    gameManager: %VRCUdonUdonBehaviour,
+    null\r\n    scoreText: %UnityEngineUIText, null\r\n    __0_this_intnl_ScoreText:
+    %VRCUdonUdonBehaviour, this\r\n    __0_const_intnl_SystemString: %SystemString,
+    null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
+    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
+    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
+    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_SystemUInt32:
+    %SystemUInt32, null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_SystemObject:
+    %SystemObject, null\r\n    __1_intnl_SystemObject: %SystemObject, null\r\n    __2_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __0_intnl_UnityEngineUIText:
+    %UnityEngineUIText, null\r\n    __0_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n
+    \   __0_intnl_ScoreManager: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_returnTarget_UInt32:
     %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n
     \       \r\n         # using UnityEngine;\r\n        \r\n         # using UnityEngine.UI;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
-    \       \r\n         # public class ScoreText : UdonSharpBehaviour\r\n.code_start\r\n.code_end\r\n"
+    \       \r\n         # public class ScoreText : UdonSharpBehaviour\r\n.code_start\r\n
+    \       \r\n         # Text scoreText;\r\n        \r\n         # [SerializeField]
+    int playerID;\r\n        \r\n         # [SerializeField] GameManager gameManager;\r\n
+    \       \r\n         # private void Start()\r\n    .export _start\r\n        \r\n
+    \   _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
+    \       \r\n         # scoreText = GetComponent<Text>();\r\n        PUSH, __0_this_intnl_ScoreText\r\n
+    \       PUSH, __0_const_intnl_SystemType\r\n        PUSH, __0_intnl_UnityEngineUIText\r\n
+    \       EXTERN, \"UnityEngineUIText.__GetComponent__T\"\r\n        PUSH, __0_intnl_UnityEngineUIText\r\n
+    \       PUSH, scoreText\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n        \r\n         # private void Update()\r\n    .export _update\r\n
+    \       \r\n    _update:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
+    {\r\n        \r\n         # scoreText.text = gameManager.GetScoreManager().GetData(playerID).GetValue().ToString();\r\n
+    \       PUSH, gameManager\r\n        PUSH, __0_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, gameManager\r\n        PUSH, __1_const_intnl_SystemString\r\n        PUSH,
+    __0_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __0_intnl_SystemObject\r\n        PUSH, __0_intnl_ScoreManager\r\n
+    \       COPY\r\n        PUSH, __0_intnl_ScoreManager\r\n        PUSH, __2_const_intnl_SystemString\r\n
+    \       PUSH, playerID\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_ScoreManager\r\n        PUSH, __3_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_ScoreManager\r\n        PUSH, __4_const_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __0_intnl_ScoreData\r\n
+    \       COPY\r\n        PUSH, __0_intnl_ScoreData\r\n        PUSH, __5_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_ScoreData\r\n        PUSH, __6_const_intnl_SystemString\r\n
+    \       PUSH, __2_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __0_intnl_SystemInt32\r\n
+    \       EXTERN, \"SystemConvert.__ToInt32__SystemObject__SystemInt32\"\r\n        PUSH,
+    __0_intnl_SystemInt32\r\n        PUSH, __0_intnl_SystemString\r\n        EXTERN,
+    \"SystemInt32.__ToString__SystemString\"\r\n        PUSH, scoreText\r\n        PUSH,
+    __0_intnl_SystemString\r\n        EXTERN, \"UnityEngineUIText.__set_text__SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 937943fc050a0bc48991a6cfd9533546, type: 3}
   behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
@@ -174,17 +222,249 @@ MonoBehaviour:
       lineChar: 25
       spanCodeSection: 
     - startInstruction: 0
-      endInstruction: 0
+      endInstruction: -1
       startSourceChar: 127
-      endSourceChar: 127
+      endSourceChar: 154
       line: 7
       lineChar: 25
+      spanCodeSection: "UdonSharpBehaviour\r\n{\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 154
+      endSourceChar: 154
+      line: 9
+      lineChar: 4
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 154
+      endSourceChar: 154
+      line: 9
+      lineChar: 4
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 154
+      endSourceChar: 175
+      line: 9
+      lineChar: 4
+      spanCodeSection: "Text scoreText;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 175
+      endSourceChar: 176
+      line: 10
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 176
+      endSourceChar: 176
+      line: 10
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 176
+      endSourceChar: 192
+      line: 10
+      lineChar: 5
+      spanCodeSection: 'SerializeField] '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 192
+      endSourceChar: 192
+      line: 10
+      lineChar: 21
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 192
+      endSourceChar: 211
+      line: 10
+      lineChar: 21
+      spanCodeSection: "int playerID;\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 211
+      endSourceChar: 212
+      line: 11
+      lineChar: 4
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 212
+      endSourceChar: 212
+      line: 11
+      lineChar: 5
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 212
+      endSourceChar: 228
+      line: 11
+      lineChar: 5
+      spanCodeSection: 'SerializeField] '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 228
+      endSourceChar: 228
+      line: 11
+      lineChar: 21
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 228
+      endSourceChar: 260
+      line: 11
+      lineChar: 21
+      spanCodeSection: "GameManager gameManager;\r\n\r\n    "
+    - startInstruction: 0
+      endInstruction: 19
+      startSourceChar: 260
+      endSourceChar: 286
+      line: 13
+      lineChar: 4
+      spanCodeSection: "private void Start()\r\n    "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 286
+      endSourceChar: 297
+      line: 14
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 297
+      endSourceChar: 297
+      line: 15
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 297
+      endSourceChar: 309
+      line: 15
+      lineChar: 8
+      spanCodeSection: 'scoreText = '
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 309
+      endSourceChar: 309
+      line: 15
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 309
+      endSourceChar: 321
+      line: 15
+      lineChar: 20
+      spanCodeSection: GetComponent
+    - startInstruction: 20
+      endInstruction: 19
+      startSourceChar: 321
+      endSourceChar: 322
+      line: 15
+      lineChar: 32
+      spanCodeSection: <
+    - startInstruction: 20
+      endInstruction: 79
+      startSourceChar: 322
+      endSourceChar: 345
+      line: 15
+      lineChar: 33
+      spanCodeSection: "Text>();\r\n    }\r\n\r\n    "
+    - startInstruction: 80
+      endInstruction: 99
+      startSourceChar: 345
+      endSourceChar: 372
+      line: 18
+      lineChar: 4
+      spanCodeSection: "private void Update()\r\n    "
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 372
+      endSourceChar: 383
+      line: 19
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 383
+      endSourceChar: 383
+      line: 20
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 383
+      endSourceChar: 400
+      line: 20
+      lineChar: 8
+      spanCodeSection: 'scoreText.text = '
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 400
+      endSourceChar: 400
+      line: 20
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 400
+      endSourceChar: 400
+      line: 20
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 400
+      endSourceChar: 400
+      line: 20
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 400
+      endSourceChar: 400
+      line: 20
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 100
+      endInstruction: 99
+      startSourceChar: 400
+      endSourceChar: 438
+      line: 20
+      lineChar: 25
+      spanCodeSection: gameManager.GetScoreManager().GetData(
+    - startInstruction: 100
+      endInstruction: 283
+      startSourceChar: 438
+      endSourceChar: 448
+      line: 20
+      lineChar: 63
+      spanCodeSection: playerID).
+    - startInstruction: 284
+      endInstruction: 363
+      startSourceChar: 448
+      endSourceChar: 459
+      line: 20
+      lineChar: 73
+      spanCodeSection: GetValue().
+    - startInstruction: 364
+      endInstruction: 364
+      startSourceChar: 459
+      endSourceChar: 459
+      line: 20
+      lineChar: 84
       spanCodeSection: 
   hasInteractEvent: 0
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 11500000, guid: efa403b78ed19c34bb4beafb4d0433ad, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -203,7 +483,208 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: scoreText
+    - Name: $v
+      Entry: 7
+      Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 3|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.UI.Text, UnityEngine.UI
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
       Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineUIText
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: scoreText
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: scoreText
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: playerID
+    - Name: $v
+      Entry: 7
+      Data: 6|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 7|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 8|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Int32, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: playerID
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: playerID
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 10|UnityEngine.SerializeField, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: gameManager
+    - Name: $v
+      Entry: 7
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 13|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: GameManager, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: VRCUdonUdonBehaviour
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: gameManager
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: gameManager
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 15|UnityEngine.SerializeField, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 

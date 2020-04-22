@@ -17,7 +17,8 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .sync scoreData, none\r\n\r\n    __refl_const_intnl_udonTypeID:
     %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
     \   scoreData: %SystemInt32, null\r\n    __0_value_Int32: %SystemInt32, null\r\n
-    \   __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __0_intnl_returnValSymbol_Int32:
+    \   __1_value_Int32: %SystemInt32, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32,
+    null\r\n    __0_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __0_intnl_SystemInt32:
     %SystemInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
@@ -28,12 +29,20 @@ MonoBehaviour:
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
     {\r\n        \r\n         # scoreData = value;\r\n        PUSH, __0_value_Int32\r\n
     \       PUSH, scoreData\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # public int GetValue()\r\n    .export GetValue\r\n
-    \       \r\n    GetValue:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       \r\n        \r\n         # public void AddValue(int value)\r\n    .export
+    AddValue\r\n        \r\n    AddValue:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # return scoreData;\r\n        PUSH, scoreData\r\n        PUSH,
-    __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+    {\r\n        \r\n         # scoreData += value;\r\n        PUSH, scoreData\r\n
+    \       PUSH, __1_value_Int32\r\n        PUSH, __0_intnl_SystemInt32\r\n        EXTERN,
+    \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n        PUSH,
+    __0_intnl_SystemInt32\r\n        PUSH, scoreData\r\n        COPY\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public int
+    GetValue()\r\n    .export GetValue\r\n        \r\n    GetValue:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # return scoreData;\r\n
+    \       PUSH, scoreData\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
   assemblyError: 
   sourceCsScript: {fileID: 11500000, guid: 3e6d1bec19a6a0f45b7b9ca7a4e8ff22, type: 3}
   behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
@@ -260,29 +269,64 @@ MonoBehaviour:
     - startInstruction: 48
       endInstruction: 67
       startSourceChar: 271
-      endSourceChar: 298
+      endSourceChar: 308
       line: 16
       lineChar: 4
-      spanCodeSection: "public int GetValue()\r\n    "
+      spanCodeSection: "public void AddValue(int value)\r\n    "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 298
-      endSourceChar: 309
+      startSourceChar: 308
+      endSourceChar: 319
       line: 17
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 68
       endInstruction: 67
-      startSourceChar: 309
-      endSourceChar: 316
+      startSourceChar: 319
+      endSourceChar: 319
       line: 18
       lineChar: 8
-      spanCodeSection: 'return '
+      spanCodeSection: 
     - startInstruction: 68
-      endInstruction: 68
-      startSourceChar: 316
-      endSourceChar: 316
+      endInstruction: 67
+      startSourceChar: 319
+      endSourceChar: 332
       line: 18
+      lineChar: 8
+      spanCodeSection: 'scoreData += '
+    - startInstruction: 68
+      endInstruction: 127
+      startSourceChar: 332
+      endSourceChar: 353
+      line: 18
+      lineChar: 21
+      spanCodeSection: "value;\r\n    }\r\n\r\n    "
+    - startInstruction: 128
+      endInstruction: 147
+      startSourceChar: 353
+      endSourceChar: 380
+      line: 21
+      lineChar: 4
+      spanCodeSection: "public int GetValue()\r\n    "
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 380
+      endSourceChar: 391
+      line: 22
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 148
+      endInstruction: 147
+      startSourceChar: 391
+      endSourceChar: 398
+      line: 23
+      lineChar: 8
+      spanCodeSection: 'return '
+    - startInstruction: 148
+      endInstruction: 148
+      startSourceChar: 398
+      endSourceChar: 398
+      line: 23
       lineChar: 15
       spanCodeSection: 
   hasInteractEvent: 0

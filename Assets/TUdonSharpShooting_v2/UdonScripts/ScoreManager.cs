@@ -6,10 +6,16 @@ using VRC.Udon;
 
 public class ScoreManager : UdonSharpBehaviour
 {
-    [SerializeField] ScoreData[] scoreData;
+    ScoreData[] scoreData;
 
     void Start()
     {
+        scoreData = new ScoreData[transform.childCount];
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            scoreData[i] = transform.GetChild(i).GetComponent<ScoreData>();
+        }
+
         ResetScore();
     }
 
