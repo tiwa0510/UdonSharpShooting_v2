@@ -11,6 +11,8 @@ public class Target : UdonSharpBehaviour
     int HP;
     [SerializeField] GameObject visual;
     [SerializeField] Collider collider;
+    [SerializeField] ParticleSystem breakEffect;
+    [SerializeField] ParticleSystem addScoreEffect;
 
     private void Start()
     {
@@ -19,6 +21,7 @@ public class Target : UdonSharpBehaviour
 
     public void Damage(int damage)
     {
+        addScoreEffect.Play();
         HP -= damage;
         if(HP <= 0)
         {
@@ -28,6 +31,7 @@ public class Target : UdonSharpBehaviour
 
     void BreakTarget()
     {
+        breakEffect.Play();
         visual.SetActive(false);
         collider.enabled = false;
     }

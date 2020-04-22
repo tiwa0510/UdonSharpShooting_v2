@@ -20,6 +20,7 @@ public class Bullet : UdonSharpBehaviour
     public void Shot()
     {
         bullet.Play();
+        bulletEffect.Play();
         SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "ShotEffect");
     }
 

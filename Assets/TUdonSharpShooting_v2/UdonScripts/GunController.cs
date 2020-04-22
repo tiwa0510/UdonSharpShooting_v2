@@ -44,8 +44,6 @@ public class GunController : UdonSharpBehaviour
             ShotSE();
 
             bulletNum--;
-            Debug.Log(bulletNum);
-            Debug.Log(bulletNumMax);
             if (bulletNum <= 0)
             {
                 delayTimer.StartTimer(0, this, "Reload", 1);
@@ -75,7 +73,6 @@ public class GunController : UdonSharpBehaviour
     public void Reload()
     {
         bulletNum = bulletNumMax;
-        Debug.LogError(bulletNum);
         ReloadSE();
     }
 
