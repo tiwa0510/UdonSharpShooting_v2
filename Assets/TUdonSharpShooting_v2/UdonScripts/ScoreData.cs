@@ -7,20 +7,20 @@ using VRC.Udon;
 public class ScoreData : UdonSharpBehaviour
 {
     [UdonSynced(UdonSyncMode.None)]
-    int scoreData;
+    int score;
 
     public void SetValue(int value)
     {
-        scoreData = value;
+        score = value;
     }
 
     public void AddValue(int value)
     {
-        scoreData += value;
+        score += value;
     }
 
     public int GetValue()
     {
-        return scoreData;
+        return score;
     }
 }

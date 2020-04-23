@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: GunManager Udon C# Program Asset
+  m_Name: GunSetting
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 896cd19cec35bb249950f1149e36f42f,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 98eaf3f45e15b29478574b14819aa496,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export gameManager\r\n    .export bulletNumMax\r\n
-    \   .export ATK\r\n    .export guns\r\n\r\n    __refl_const_intnl_udonTypeID:
-    %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
-    \   guns: %UnityEngineComponentArray, null\r\n    ATK: %SystemInt32, null\r\n
-    \   bulletNumMax: %SystemInt32, null\r\n    gameManager: %VRCUdonUdonBehaviour,
-    null\r\n    __0_i_Int32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n
-    \   __0_const_intnl_SystemString: %SystemString, null\r\n    __1_const_intnl_SystemString:
-    %SystemString, null\r\n    __2_const_intnl_SystemString: %SystemString, null\r\n
-    \   __3_const_intnl_SystemString: %SystemString, null\r\n    __4_const_intnl_SystemString:
+  udonAssembly: ".data_start\r\n\r\n    .export bulletNumMax\r\n    .export ATK\r\n
+    \   .export guns\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64, null\r\n
+    \   __refl_const_intnl_udonTypeName: %SystemString, null\r\n    guns: %UnityEngineComponentArray,
+    null\r\n    ATK: %SystemInt32, null\r\n    bulletNumMax: %SystemInt32, null\r\n
+    \   __0_i_Int32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
     %SystemString, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
     null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __0_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n    __1_intnl_SystemInt32:
@@ -34,14 +32,14 @@ MonoBehaviour:
     \       \r\n         # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
     \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
     GunSetting : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # [SerializeField]
-    GameManager gameManager;\r\n        \r\n         # [SerializeField] int bulletNumMax;\r\n
-    \       \r\n         # [SerializeField] int ATK;\r\n        \r\n         # [SerializeField]
-    GunController[] guns;\r\n        \r\n         # void Start()\r\n    .export _start\r\n
-    \       \r\n    _start:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # Init();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000074\r\n
+    int bulletNumMax;\r\n        \r\n         # [SerializeField] int ATK;\r\n        \r\n
+    \        # [SerializeField] GunController[] guns;\r\n        \r\n         # void
+    Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # Init();\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __0_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000074\r\n
     \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
     \       \r\n         # void Init()\r\n    Init:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
@@ -52,10 +50,10 @@ MonoBehaviour:
     guns\r\n        PUSH, __1_intnl_SystemInt32\r\n        EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n
     \       PUSH, __0_intnl_SystemInt32\r\n        PUSH, __1_intnl_SystemInt32\r\n
     \       PUSH, __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000001EC\r\n
-    \       \r\n         # {\r\n        \r\n         # guns[i].InitData(i, ATK, bulletNumMax,
-    gameManager);\r\n        PUSH, guns\r\n        PUSH, __0_i_Int32\r\n        PUSH,
-    __0_intnl_GunController\r\n        EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __0_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000001CC\r\n
+    \       \r\n         # {\r\n        \r\n         # guns[i].InitData(i, ATK, bulletNumMax);\r\n
+    \       PUSH, guns\r\n        PUSH, __0_i_Int32\r\n        PUSH, __0_intnl_GunController\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
     \       PUSH, __0_intnl_GunController\r\n        PUSH, __0_const_intnl_SystemString\r\n
     \       PUSH, __0_i_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, __0_intnl_GunController\r\n        PUSH, __1_const_intnl_SystemString\r\n
@@ -63,8 +61,6 @@ MonoBehaviour:
     \       PUSH, __0_intnl_GunController\r\n        PUSH, __2_const_intnl_SystemString\r\n
     \       PUSH, bulletNumMax\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, __0_intnl_GunController\r\n        PUSH, __3_const_intnl_SystemString\r\n
-    \       PUSH, gameManager\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, __0_intnl_GunController\r\n        PUSH, __4_const_intnl_SystemString\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       PUSH, __0_i_Int32\r\n        PUSH, __2_intnl_SystemInt32\r\n        COPY\r\n
     \       PUSH, __0_i_Int32\r\n        PUSH, __1_const_intnl_SystemInt32\r\n        PUSH,
@@ -235,303 +231,260 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 149
-      endSourceChar: 179
+      endSourceChar: 172
       line: 8
-      lineChar: 21
-      spanCodeSection: "GameManager gameManager;\r\n    "
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 179
-      endSourceChar: 180
-      line: 9
-      lineChar: 4
-      spanCodeSection: '['
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 180
-      endSourceChar: 180
-      line: 9
-      lineChar: 5
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 180
-      endSourceChar: 196
-      line: 9
-      lineChar: 5
-      spanCodeSection: 'SerializeField] '
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 196
-      endSourceChar: 196
-      line: 9
-      lineChar: 21
-      spanCodeSection: 
-    - startInstruction: 0
-      endInstruction: -1
-      startSourceChar: 196
-      endSourceChar: 219
-      line: 9
       lineChar: 21
       spanCodeSection: "int bulletNumMax;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 219
-      endSourceChar: 220
-      line: 10
+      startSourceChar: 172
+      endSourceChar: 173
+      line: 9
       lineChar: 4
       spanCodeSection: '['
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 220
-      endSourceChar: 220
-      line: 10
+      startSourceChar: 173
+      endSourceChar: 173
+      line: 9
       lineChar: 5
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 220
-      endSourceChar: 236
-      line: 10
+      startSourceChar: 173
+      endSourceChar: 189
+      line: 9
       lineChar: 5
       spanCodeSection: 'SerializeField] '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 236
-      endSourceChar: 236
-      line: 10
+      startSourceChar: 189
+      endSourceChar: 189
+      line: 9
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 236
-      endSourceChar: 250
-      line: 10
+      startSourceChar: 189
+      endSourceChar: 203
+      line: 9
       lineChar: 21
       spanCodeSection: "int ATK;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 250
-      endSourceChar: 251
-      line: 11
+      startSourceChar: 203
+      endSourceChar: 204
+      line: 10
       lineChar: 4
       spanCodeSection: '['
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 251
-      endSourceChar: 251
-      line: 11
+      startSourceChar: 204
+      endSourceChar: 204
+      line: 10
       lineChar: 5
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 251
-      endSourceChar: 267
-      line: 11
+      startSourceChar: 204
+      endSourceChar: 220
+      line: 10
       lineChar: 5
       spanCodeSection: 'SerializeField] '
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 267
-      endSourceChar: 267
-      line: 11
+      startSourceChar: 220
+      endSourceChar: 220
+      line: 10
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 267
-      endSourceChar: 267
-      line: 11
+      startSourceChar: 220
+      endSourceChar: 220
+      line: 10
       lineChar: 21
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 267
-      endSourceChar: 296
-      line: 11
+      startSourceChar: 220
+      endSourceChar: 249
+      line: 10
       lineChar: 21
       spanCodeSection: "GunController[] guns;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
-      startSourceChar: 296
-      endSourceChar: 314
-      line: 13
+      startSourceChar: 249
+      endSourceChar: 267
+      line: 12
       lineChar: 4
       spanCodeSection: "void Start()\r\n    "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 314
-      endSourceChar: 325
-      line: 14
+      startSourceChar: 267
+      endSourceChar: 278
+      line: 13
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 325
-      endSourceChar: 325
-      line: 15
+      startSourceChar: 278
+      endSourceChar: 278
+      line: 14
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 19
-      startSourceChar: 325
-      endSourceChar: 325
-      line: 15
+      startSourceChar: 278
+      endSourceChar: 278
+      line: 14
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 20
       endInstruction: 95
-      startSourceChar: 325
-      endSourceChar: 347
-      line: 15
+      startSourceChar: 278
+      endSourceChar: 300
+      line: 14
       lineChar: 8
       spanCodeSection: "Init();\r\n    }\r\n\r\n    "
     - startInstruction: 96
       endInstruction: 115
-      startSourceChar: 347
-      endSourceChar: 364
-      line: 18
+      startSourceChar: 300
+      endSourceChar: 317
+      line: 17
       lineChar: 4
       spanCodeSection: "void Init()\r\n    "
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 364
-      endSourceChar: 375
-      line: 19
+      startSourceChar: 317
+      endSourceChar: 328
+      line: 18
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 375
-      endSourceChar: 379
-      line: 20
+      startSourceChar: 328
+      endSourceChar: 332
+      line: 19
       lineChar: 8
       spanCodeSection: for(
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 379
-      endSourceChar: 379
-      line: 20
+      startSourceChar: 332
+      endSourceChar: 332
+      line: 19
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 379
-      endSourceChar: 379
-      line: 20
+      startSourceChar: 332
+      endSourceChar: 332
+      line: 19
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 379
-      endSourceChar: 385
-      line: 20
+      startSourceChar: 332
+      endSourceChar: 338
+      line: 19
       lineChar: 12
       spanCodeSection: 'int i '
     - startInstruction: 116
       endInstruction: 115
-      startSourceChar: 385
-      endSourceChar: 387
-      line: 20
+      startSourceChar: 338
+      endSourceChar: 340
+      line: 19
       lineChar: 18
       spanCodeSection: '= '
     - startInstruction: 116
       endInstruction: 135
-      startSourceChar: 387
-      endSourceChar: 390
-      line: 20
+      startSourceChar: 340
+      endSourceChar: 343
+      line: 19
       lineChar: 20
       spanCodeSection: '0; '
     - startInstruction: 136
       endInstruction: 135
-      startSourceChar: 390
-      endSourceChar: 390
-      line: 20
+      startSourceChar: 343
+      endSourceChar: 343
+      line: 19
       lineChar: 23
       spanCodeSection: 
     - startInstruction: 136
       endInstruction: 155
-      startSourceChar: 390
-      endSourceChar: 394
-      line: 20
+      startSourceChar: 343
+      endSourceChar: 347
+      line: 19
       lineChar: 23
       spanCodeSection: 'i < '
     - startInstruction: 156
       endInstruction: 155
-      startSourceChar: 394
-      endSourceChar: 394
-      line: 20
+      startSourceChar: 347
+      endSourceChar: 347
+      line: 19
       lineChar: 27
       spanCodeSection: 
     - startInstruction: 156
       endInstruction: 155
-      startSourceChar: 394
-      endSourceChar: 399
-      line: 20
+      startSourceChar: 347
+      endSourceChar: 352
+      line: 19
       lineChar: 27
       spanCodeSection: guns.
     - startInstruction: 156
       endInstruction: 227
-      startSourceChar: 399
-      endSourceChar: 421
-      line: 20
+      startSourceChar: 352
+      endSourceChar: 374
+      line: 19
       lineChar: 32
       spanCodeSection: "Length; i++)\r\n        "
     - startInstruction: 228
       endInstruction: 227
-      startSourceChar: 421
-      endSourceChar: 436
-      line: 21
+      startSourceChar: 374
+      endSourceChar: 389
+      line: 20
       lineChar: 8
       spanCodeSection: "{\r\n            "
     - startInstruction: 228
       endInstruction: 227
-      startSourceChar: 436
-      endSourceChar: 436
-      line: 22
+      startSourceChar: 389
+      endSourceChar: 389
+      line: 21
       lineChar: 12
       spanCodeSection: 
     - startInstruction: 228
       endInstruction: 227
-      startSourceChar: 436
-      endSourceChar: 453
-      line: 22
+      startSourceChar: 389
+      endSourceChar: 406
+      line: 21
       lineChar: 12
       spanCodeSection: guns[i].InitData(
     - startInstruction: 228
       endInstruction: 227
-      startSourceChar: 453
-      endSourceChar: 456
-      line: 22
+      startSourceChar: 406
+      endSourceChar: 409
+      line: 21
       lineChar: 29
       spanCodeSection: 'i, '
     - startInstruction: 228
       endInstruction: 227
-      startSourceChar: 456
-      endSourceChar: 461
-      line: 22
+      startSourceChar: 409
+      endSourceChar: 414
+      line: 21
       lineChar: 32
       spanCodeSection: 'ATK, '
     - startInstruction: 228
-      endInstruction: 227
-      startSourceChar: 461
-      endSourceChar: 475
-      line: 22
-      lineChar: 37
-      spanCodeSection: 'bulletNumMax, '
-    - startInstruction: 228
       endInstruction: 228
-      startSourceChar: 475
-      endSourceChar: 475
-      line: 22
-      lineChar: 51
+      startSourceChar: 414
+      endSourceChar: 414
+      line: 21
+      lineChar: 37
       spanCodeSection: 
   hasInteractEvent: 0
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11500000, guid: efa403b78ed19c34bb4beafb4d0433ad, type: 3}
     - {fileID: 11500000, guid: fecd909a66fa8da4cb9fd8b0c8b061f7, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -551,13 +504,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: gameManager
+      Data: bulletNumMax
     - Name: $v
       Entry: 7
       Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -567,75 +520,6 @@ MonoBehaviour:
     - Name: internalType
       Entry: 7
       Data: 4|System.RuntimeType, mscorlib
-    - Name: 
-      Entry: 1
-      Data: GameManager, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: declarationType
-      Entry: 3
-      Data: 1
-    - Name: syncMode
-      Entry: 3
-      Data: 0
-    - Name: symbolResolvedTypeName
-      Entry: 1
-      Data: VRCUdonUdonBehaviour
-    - Name: symbolOriginalName
-      Entry: 1
-      Data: gameManager
-    - Name: symbolUniqueName
-      Entry: 1
-      Data: gameManager
-    - Name: symbolDefaultValue
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: fieldAttributes
-      Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 6|UnityEngine.SerializeField, UnityEngine.CoreModule
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: userBehaviourSource
-      Entry: 10
-      Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: bulletNumMax
-    - Name: $v
-      Entry: 7
-      Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
-    - Name: fieldSymbol
-      Entry: 7
-      Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
-    - Name: internalType
-      Entry: 7
-      Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Int32, mscorlib
@@ -665,13 +549,13 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 11|UnityEngine.SerializeField, UnityEngine.CoreModule
+      Data: 6|UnityEngine.SerializeField, UnityEngine.CoreModule
     - Name: 
       Entry: 8
       Data: 
@@ -698,13 +582,13 @@ MonoBehaviour:
       Data: ATK
     - Name: $v
       Entry: 7
-      Data: 12|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 13|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 9
-      Data: 9
+      Data: 4
     - Name: declarationType
       Entry: 3
       Data: 1
@@ -728,13 +612,13 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 9|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 15|UnityEngine.SerializeField, UnityEngine.CoreModule
+      Data: 10|UnityEngine.SerializeField, UnityEngine.CoreModule
     - Name: 
       Entry: 8
       Data: 
@@ -761,13 +645,13 @@ MonoBehaviour:
       Data: guns
     - Name: $v
       Entry: 7
-      Data: 16|UdonSharp.FieldDefinition, UdonSharp.Editor
+      Data: 11|UdonSharp.FieldDefinition, UdonSharp.Editor
     - Name: fieldSymbol
       Entry: 7
-      Data: 17|UdonSharp.SymbolDefinition, UdonSharp.Editor
+      Data: 12|UdonSharp.SymbolDefinition, UdonSharp.Editor
     - Name: internalType
       Entry: 7
-      Data: 18|System.RuntimeType, mscorlib
+      Data: 13|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: GunController[], Assembly-CSharp
@@ -797,13 +681,13 @@ MonoBehaviour:
       Data: 
     - Name: fieldAttributes
       Entry: 7
-      Data: 19|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+      Data: 14|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 20|UnityEngine.SerializeField, UnityEngine.CoreModule
+      Data: 15|UnityEngine.SerializeField, UnityEngine.CoreModule
     - Name: 
       Entry: 8
       Data: 
@@ -815,7 +699,7 @@ MonoBehaviour:
       Data: 
     - Name: userBehaviourSource
       Entry: 10
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 

@@ -10,44 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: ScoreManager Udon C# Program Asset
+  m_Name: ScoreManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 591bc599d9f3ed747995bf70b6d48e9c,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 35c4eca17506d4440adbae421b023cc3,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
     null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    scoreData:
     %UnityEngineComponentArray, null\r\n    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform,
     this\r\n    __0_i_Int32: %SystemInt32, null\r\n    __0_playerID_Int32: %SystemInt32,
-    null\r\n    __1_i_Int32: %SystemInt32, null\r\n    __1_playerID_Int32: %SystemInt32,
-    null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n
-    \   __0_const_intnl_SystemInt64: %SystemInt64, null\r\n    __1_const_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __0_const_intnl_SystemObject: %SystemObject, null\r\n
-    \   __0_const_intnl_SystemString: %SystemString, null\r\n    __1_const_intnl_SystemString:
-    %SystemString, null\r\n    __2_const_intnl_SystemString: %SystemString, null\r\n
+    null\r\n    __0_score_Int32: %SystemInt32, null\r\n    __1_i_Int32: %SystemInt32,
+    null\r\n    __1_playerID_Int32: %SystemInt32, null\r\n    __1_score_Int32: %SystemInt32,
+    null\r\n    __2_playerID_Int32: %SystemInt32, null\r\n    __3_playerID_Int32:
+    %SystemInt32, null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __0_const_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
+    \   __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __0_const_intnl_SystemInt64: %SystemInt64, null\r\n
+    \   __1_const_intnl_SystemInt64: %SystemInt64, null\r\n    __0_const_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_const_intnl_SystemString: %SystemString, null\r\n
+    \   __1_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
+    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
+    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
     \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_ScoreData:
     %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
     null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __0_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __1_intnl_SystemBoolean: %SystemBoolean, null\r\n
     \   __2_intnl_SystemBoolean: %SystemBoolean, null\r\n    __3_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __4_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __0_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_ScoreDataArray:
-    %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray,
-    null\r\n    __1_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
-    \   __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n    __0_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __1_intnl_SystemInt32: %SystemInt32, null\r\n    __2_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __3_intnl_SystemInt32: %SystemInt32, null\r\n    __4_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __5_intnl_SystemInt32: %SystemInt32, null\r\n    __6_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __7_intnl_SystemInt32: %SystemInt32, null\r\n    __8_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __9_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __1_intnl_SystemInt64: %SystemInt64, null\r\n    __0_intnl_SystemObject:
+    \   __5_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n    __0_intnl_ScoreDataArray: %UnityEngineComponentArray,
+    null\r\n    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
+    \   __1_intnl_ScoreDataArray: %UnityEngineComponentArray, null\r\n    __1_intnl_UnityEngineComponentArray:
+    %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject,
+    null\r\n    __0_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __0_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __1_intnl_SystemInt32: %SystemInt32, null\r\n    __10_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __3_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __4_intnl_SystemInt32: %SystemInt32, null\r\n    __5_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __6_intnl_SystemInt32: %SystemInt32, null\r\n    __7_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __8_intnl_SystemInt32: %SystemInt32, null\r\n    __9_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __0_intnl_SystemInt64: %SystemInt64, null\r\n    __1_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __0_intnl_SystemObject: %SystemObject, null\r\n    __1_intnl_SystemObject:
     %SystemObject, null\r\n    __0_intnl_UnityEngineTransform: %UnityEngineTransform,
-    null\r\n    __0_intnl_returnValSymbol_ScoreData: %VRCUdonUdonBehaviour, null\r\n
-    \   __0_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __1_intnl_ScoreData:
+    null\r\n    __0_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __1_intnl_ScoreData:
     %VRCUdonUdonBehaviour, null\r\n    __2_intnl_ScoreData: %VRCUdonUdonBehaviour,
     null\r\n    __3_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __4_intnl_ScoreData:
-    %VRCUdonUdonBehaviour, null\r\n    __0_intnl_oldReturnLoc_UInt32: %SystemUInt32,
-    null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
+    %VRCUdonUdonBehaviour, null\r\n    __5_intnl_ScoreData: %VRCUdonUdonBehaviour,
+    null\r\n    __6_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
     \       \r\n         # public class ScoreManager : UdonSharpBehaviour\r\n.code_start\r\n
@@ -136,22 +145,57 @@ MonoBehaviour:
     __9_intnl_SystemInt32\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       PUSH, __9_intnl_SystemInt32\r\n        PUSH, __1_i_Int32\r\n        COPY\r\n
     \       JUMP, 0x000003C4\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # public ScoreData GetData(int playerID)\r\n
-    \   .export GetData\r\n        \r\n    GetData:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
+    \       \r\n        \r\n         # public void SetValue(int playerID, int score)\r\n
+    \   .export SetValue\r\n        \r\n    SetValue:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # scoreData[playerID].SetValue(score);\r\n
+    \       PUSH, scoreData\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __3_intnl_ScoreData\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __3_intnl_ScoreData\r\n        PUSH, __1_const_intnl_SystemString\r\n
+    \       PUSH, __0_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __3_intnl_ScoreData\r\n        PUSH, __2_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public void AddValue(int playerID, int score)\r\n    .export AddValue\r\n
+    \       \r\n    AddValue:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # return scoreData[playerID];\r\n        PUSH, scoreData\r\n
-    \       PUSH, __0_playerID_Int32\r\n        PUSH, __3_intnl_ScoreData\r\n        EXTERN,
+    {\r\n        \r\n         # scoreData[playerID].AddValue(score);\r\n        PUSH,
+    scoreData\r\n        PUSH, __1_playerID_Int32\r\n        PUSH, __4_intnl_ScoreData\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __4_intnl_ScoreData\r\n        PUSH, __3_const_intnl_SystemString\r\n
+    \       PUSH, __1_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __4_intnl_ScoreData\r\n        PUSH, __4_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
+    \        # public int GetData(int playerID)\r\n    .export GetData\r\n        \r\n
+    \   GetData:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
+    \       \r\n         # if (scoreData == null) return 0;\r\n        PUSH, scoreData\r\n
+    \       PUSH, __1_intnl_ScoreDataArray\r\n        COPY\r\n        PUSH, __1_intnl_ScoreDataArray\r\n
+    \       PUSH, __0_const_intnl_UnityEngineComponentArray\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000062C\r\n
+    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
+    \        # return scoreData[playerID].GetValue();\r\n        PUSH, scoreData\r\n
+    \       PUSH, __2_playerID_Int32\r\n        PUSH, __5_intnl_ScoreData\r\n        EXTERN,
     \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n        PUSH,
-    __3_intnl_ScoreData\r\n        PUSH, __0_intnl_returnValSymbol_ScoreData\r\n        COPY\r\n
+    __5_intnl_ScoreData\r\n        PUSH, __5_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, __5_intnl_ScoreData\r\n        PUSH, __6_const_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __10_intnl_SystemInt32\r\n
+    \       EXTERN, \"SystemConvert.__ToInt32__SystemObject__SystemInt32\"\r\n        PUSH,
+    __10_intnl_SystemInt32\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
     __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public void
     SetDataOwnership(VRCPlayerApi player, int playerID)\r\n    .export SetDataOwnership\r\n
     \       \r\n    SetDataOwnership:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
     {\r\n        \r\n         # Networking.SetOwner(player, scoreData[playerID].gameObject);\r\n
-    \       PUSH, scoreData\r\n        PUSH, __1_playerID_Int32\r\n        PUSH, __4_intnl_ScoreData\r\n
+    \       PUSH, scoreData\r\n        PUSH, __3_playerID_Int32\r\n        PUSH, __6_intnl_ScoreData\r\n
     \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
-    \       PUSH, __4_intnl_ScoreData\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
+    \       PUSH, __6_intnl_ScoreData\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
     \       EXTERN, \"UnityEngineComponent.__get_gameObject__UnityEngineGameObject\"\r\n
     \       PUSH, __0_player_VRCPlayerApi\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
     \       EXTERN, \"VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid\"\r\n
@@ -683,128 +727,261 @@ MonoBehaviour:
     - startInstruction: 1232
       endInstruction: 1251
       startSourceChar: 594
-      endSourceChar: 638
+      endSourceChar: 645
       line: 29
       lineChar: 4
-      spanCodeSection: "public ScoreData GetData(int playerID)\r\n    "
+      spanCodeSection: "public void SetValue(int playerID, int score)\r\n    "
     - startInstruction: 1252
       endInstruction: 1251
-      startSourceChar: 638
-      endSourceChar: 649
+      startSourceChar: 645
+      endSourceChar: 656
       line: 30
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 1252
       endInstruction: 1251
-      startSourceChar: 649
+      startSourceChar: 656
       endSourceChar: 656
       line: 31
       lineChar: 8
-      spanCodeSection: 'return '
-    - startInstruction: 1252
-      endInstruction: 1251
-      startSourceChar: 656
-      endSourceChar: 656
-      line: 31
-      lineChar: 15
       spanCodeSection: 
     - startInstruction: 1252
       endInstruction: 1251
       startSourceChar: 656
-      endSourceChar: 666
+      endSourceChar: 685
       line: 31
-      lineChar: 15
-      spanCodeSection: scoreData[
+      lineChar: 8
+      spanCodeSection: scoreData[playerID].SetValue(
     - startInstruction: 1252
-      endInstruction: 1251
-      startSourceChar: 666
-      endSourceChar: 666
+      endInstruction: 1347
+      startSourceChar: 685
+      endSourceChar: 707
       line: 31
-      lineChar: 25
-      spanCodeSection: 
-    - startInstruction: 1252
-      endInstruction: 1319
-      startSourceChar: 666
-      endSourceChar: 691
-      line: 31
-      lineChar: 25
-      spanCodeSection: "playerID];\r\n    }\r\n\r\n    "
-    - startInstruction: 1320
-      endInstruction: 1339
-      startSourceChar: 691
-      endSourceChar: 760
+      lineChar: 37
+      spanCodeSection: "score);\r\n    }\r\n\r\n    "
+    - startInstruction: 1348
+      endInstruction: 1367
+      startSourceChar: 707
+      endSourceChar: 758
       line: 34
       lineChar: 4
-      spanCodeSection: "public void SetDataOwnership(VRCPlayerApi player, int playerID)\r\n
-        \   "
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 760
-      endSourceChar: 771
+      spanCodeSection: "public void AddValue(int playerID, int score)\r\n    "
+    - startInstruction: 1368
+      endInstruction: 1367
+      startSourceChar: 758
+      endSourceChar: 769
       line: 35
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 771
-      endSourceChar: 771
+    - startInstruction: 1368
+      endInstruction: 1367
+      startSourceChar: 769
+      endSourceChar: 769
       line: 36
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 771
-      endSourceChar: 791
+    - startInstruction: 1368
+      endInstruction: 1367
+      startSourceChar: 769
+      endSourceChar: 798
       line: 36
+      lineChar: 8
+      spanCodeSection: scoreData[playerID].AddValue(
+    - startInstruction: 1368
+      endInstruction: 1463
+      startSourceChar: 798
+      endSourceChar: 820
+      line: 36
+      lineChar: 37
+      spanCodeSection: "score);\r\n    }\r\n\r\n    "
+    - startInstruction: 1464
+      endInstruction: 1483
+      startSourceChar: 820
+      endSourceChar: 858
+      line: 39
+      lineChar: 4
+      spanCodeSection: "public int GetData(int playerID)\r\n    "
+    - startInstruction: 1484
+      endInstruction: 1483
+      startSourceChar: 858
+      endSourceChar: 869
+      line: 40
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1484
+      endInstruction: 1483
+      startSourceChar: 869
+      endSourceChar: 873
+      line: 41
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 1484
+      endInstruction: 1483
+      startSourceChar: 873
+      endSourceChar: 873
+      line: 41
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1484
+      endInstruction: 1503
+      startSourceChar: 873
+      endSourceChar: 886
+      line: 41
+      lineChar: 12
+      spanCodeSection: 'scoreData == '
+    - startInstruction: 1504
+      endInstruction: 1551
+      startSourceChar: 886
+      endSourceChar: 892
+      line: 41
+      lineChar: 25
+      spanCodeSection: 'null) '
+    - startInstruction: 1552
+      endInstruction: 1551
+      startSourceChar: 892
+      endSourceChar: 899
+      line: 41
+      lineChar: 31
+      spanCodeSection: 'return '
+    - startInstruction: 1552
+      endInstruction: 1579
+      startSourceChar: 899
+      endSourceChar: 911
+      line: 41
+      lineChar: 38
+      spanCodeSection: "0;\r\n        "
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 911
+      endSourceChar: 918
+      line: 42
+      lineChar: 8
+      spanCodeSection: 'return '
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 918
+      endSourceChar: 918
+      line: 42
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 918
+      endSourceChar: 918
+      line: 42
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 918
+      endSourceChar: 918
+      line: 42
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 918
+      endSourceChar: 928
+      line: 42
+      lineChar: 15
+      spanCodeSection: scoreData[
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 928
+      endSourceChar: 928
+      line: 42
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 1580
+      endInstruction: 1579
+      startSourceChar: 928
+      endSourceChar: 938
+      line: 42
+      lineChar: 25
+      spanCodeSection: playerID].
+    - startInstruction: 1580
+      endInstruction: 1727
+      startSourceChar: 938
+      endSourceChar: 964
+      line: 42
+      lineChar: 35
+      spanCodeSection: "GetValue();\r\n    }\r\n\r\n    "
+    - startInstruction: 1728
+      endInstruction: 1747
+      startSourceChar: 964
+      endSourceChar: 1033
+      line: 45
+      lineChar: 4
+      spanCodeSection: "public void SetDataOwnership(VRCPlayerApi player, int playerID)\r\n
+        \   "
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1033
+      endSourceChar: 1044
+      line: 46
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1044
+      endSourceChar: 1044
+      line: 47
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1044
+      endSourceChar: 1064
+      line: 47
       lineChar: 8
       spanCodeSection: Networking.SetOwner(
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 791
-      endSourceChar: 799
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1064
+      endSourceChar: 1072
+      line: 47
       lineChar: 28
       spanCodeSection: 'player, '
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 799
-      endSourceChar: 799
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1072
+      endSourceChar: 1072
+      line: 47
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 799
-      endSourceChar: 799
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1072
+      endSourceChar: 1072
+      line: 47
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 799
-      endSourceChar: 809
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1072
+      endSourceChar: 1082
+      line: 47
       lineChar: 36
       spanCodeSection: scoreData[
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 809
-      endSourceChar: 809
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1082
+      endSourceChar: 1082
+      line: 47
       lineChar: 46
       spanCodeSection: 
-    - startInstruction: 1340
-      endInstruction: 1339
-      startSourceChar: 809
-      endSourceChar: 819
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1747
+      startSourceChar: 1082
+      endSourceChar: 1092
+      line: 47
       lineChar: 46
       spanCodeSection: playerID].
-    - startInstruction: 1340
-      endInstruction: 1340
-      startSourceChar: 819
-      endSourceChar: 819
-      line: 36
+    - startInstruction: 1748
+      endInstruction: 1748
+      startSourceChar: 1092
+      endSourceChar: 1092
+      line: 47
       lineChar: 56
       spanCodeSection: 
   hasInteractEvent: 0

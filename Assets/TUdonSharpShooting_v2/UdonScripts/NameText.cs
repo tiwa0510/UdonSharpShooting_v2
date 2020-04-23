@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using VRC.SDKBase;
 using VRC.Udon;
 
-public class ScoreText : UdonSharpBehaviour
+public class NameText : UdonSharpBehaviour
 {
     [SerializeField] int playerID;
     Text scoreText;
@@ -19,6 +19,6 @@ public class ScoreText : UdonSharpBehaviour
 
     private void Update()
     {
-        scoreText.text = gameManager.GetScoreManager().GetData(playerID).ToString();
+        scoreText.text = gameManager.GetNameManager().GetData(playerID);
     }
 }

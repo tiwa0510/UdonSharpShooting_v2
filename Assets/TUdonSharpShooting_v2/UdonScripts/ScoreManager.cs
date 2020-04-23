@@ -27,9 +27,20 @@ public class ScoreManager : UdonSharpBehaviour
         }
     }
 
-    public ScoreData GetData(int playerID)
+    public void SetValue(int playerID, int score)
     {
-        return scoreData[playerID];
+        scoreData[playerID].SetValue(score);
+    }
+
+    public void AddValue(int playerID, int score)
+    {
+        scoreData[playerID].AddValue(score);
+    }
+
+    public int GetData(int playerID)
+    {
+        if (scoreData == null) return 0;
+        return scoreData[playerID].GetValue();
     }
 
     public void SetDataOwnership(VRCPlayerApi player, int playerID)

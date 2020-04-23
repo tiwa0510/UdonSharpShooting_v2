@@ -13,8 +13,8 @@ public class GunController : UdonSharpBehaviour
     [SerializeField] Bullet bullet;
     ResetTransform resetPosition;
     DelayTimer delayTimer;
-    GameManager gameManager;
     AudioManager audioManager;
+    GameManager gameManager;
 
     void Start()
     {
@@ -23,13 +23,13 @@ public class GunController : UdonSharpBehaviour
         delayTimer.SetTimerCapacity(2);
     }
 
-    public void InitData(int _playerID, int _ATK, int _bulletNumMax, GameManager _gameManager)
+    public void InitData(int _playerID, int _ATK, int _bulletNumMax)
     {
         playerID     = _playerID;
         ATK          = _ATK;
         bulletNumMax = _bulletNumMax;
         bulletNum    = _bulletNumMax;
-        gameManager  = _gameManager;
+        gameManager = transform.root.GetComponent<GameManager>();
         //gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer, playerID);
         audioManager = gameManager.GetAudioManager();
         bullet.InitData(this);
@@ -37,6 +37,7 @@ public class GunController : UdonSharpBehaviour
 
     private void Update()
     {
+        /*
         if(Input.GetMouseButtonDown(0))
         {
             if (bulletNum <= 0) return;
@@ -49,6 +50,7 @@ public class GunController : UdonSharpBehaviour
                 delayTimer.StartTimer(0, this, "Reload", 1);
             }
         }
+        */
             
     }
 
@@ -84,6 +86,7 @@ public class GunController : UdonSharpBehaviour
     public override void OnPickup()
     {
         delayTimer.StopTimer(0);
+        gameManager.GetNameManager().SetNameSync(Networking.LocalPlayer, playerID, Networking.LocalPlayer.displayName);
     }
 
     public override void OnDrop()
@@ -101,5 +104,4 @@ public class GunController : UdonSharpBehaviour
     public int GetATK()          { return ATK; }
     public int GetBulletNum()    { return bulletNum; }
     public int GetBulletNumMax() { return bulletNumMax; }
-    public ScoreData GetScoreData() { return gameManager.GetScoreManager().GetData(playerID); }
 }

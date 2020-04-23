@@ -9,10 +9,12 @@ public class Bullet : UdonSharpBehaviour
     ParticleSystem bullet;
     [SerializeField] ParticleSystem bulletEffect;
 
+    GameManager gameManager;
     GunController gunController;
 
     public void InitData(GunController _gunController)
     {
+        gameManager = transform.root.GetComponent<GameManager>();
         bullet = GetComponent<ParticleSystem>();
         gunController = _gunController;
     }
@@ -34,7 +36,7 @@ public class Bullet : UdonSharpBehaviour
         Target target = other.GetComponent<Target>();
         if (target == null) return;
 
-        gunController.GetScoreData().AddValue(target.GetPoint());
+        gameManager.GetScoreManager().AddValue(gunController.GetPlayerID(), target.GetPoint());
         target.Damage(gunController.GetATK());
     }
 }

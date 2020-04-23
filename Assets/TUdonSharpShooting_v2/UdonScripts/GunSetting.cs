@@ -6,7 +6,6 @@ using VRC.Udon;
 
 public class GunSetting : UdonSharpBehaviour
 {
-    [SerializeField] GameManager gameManager;
     [SerializeField] int bulletNumMax;
     [SerializeField] int ATK;
     [SerializeField] GunController[] guns;
@@ -20,7 +19,7 @@ public class GunSetting : UdonSharpBehaviour
     {
         for(int i = 0; i < guns.Length; i++)
         {
-            guns[i].InitData(i, ATK, bulletNumMax, gameManager);
+            guns[i].InitData(i, ATK, bulletNumMax);
         }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: GunController
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 79e5ca20b41b6044d94047ffe6af0db1,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 5b3f86e95ad424448b148a3d71f2e804,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export bullet\r\n\r\n    __refl_const_intnl_udonTypeID:
     %SystemInt64, null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n
@@ -20,14 +20,15 @@ MonoBehaviour:
     %SystemInt32, null\r\n    bulletNumMax: %SystemInt32, null\r\n    playerID: %SystemInt32,
     null\r\n    audioManager: %VRCUdonUdonBehaviour, null\r\n    delayTimer: %VRCUdonUdonBehaviour,
     null\r\n    gameManager: %VRCUdonUdonBehaviour, null\r\n    resetPosition: %VRCUdonUdonBehaviour,
-    null\r\n    __0_this_intnl_GunController: %VRCUdonUdonBehaviour, this\r\n    __0__ATK_Int32:
+    null\r\n    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this\r\n
+    \   __0_this_intnl_GunController: %VRCUdonUdonBehaviour, this\r\n    __0__ATK_Int32:
     %SystemInt32, null\r\n    __0__bulletNumMax_Int32: %SystemInt32, null\r\n    __0__playerID_Int32:
-    %SystemInt32, null\r\n    __0__gameManager_GameManager: %VRCUdonUdonBehaviour,
-    null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __2_const_intnl_SystemInt32: %SystemInt32, null\r\n
-    \   __3_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __1_const_intnl_SystemInt64: %SystemInt64, null\r\n
-    \   __2_const_intnl_SystemInt64: %SystemInt64, null\r\n    __0_const_intnl_SystemObject:
+    %SystemInt32, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __2_const_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __3_const_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __0_const_intnl_SystemInt64: %SystemInt64, null\r\n    __1_const_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __2_const_intnl_SystemInt64: %SystemInt64, null\r\n
+    \   __3_const_intnl_SystemInt64: %SystemInt64, null\r\n    __0_const_intnl_SystemObject:
     %SystemObject, null\r\n    __0_const_intnl_SystemString: %SystemString, null\r\n
     \   __1_const_intnl_SystemString: %SystemString, null\r\n    __10_const_intnl_SystemString:
     %SystemString, null\r\n    __11_const_intnl_SystemString: %SystemString, null\r\n
@@ -40,53 +41,56 @@ MonoBehaviour:
     \   __20_const_intnl_SystemString: %SystemString, null\r\n    __21_const_intnl_SystemString:
     %SystemString, null\r\n    __22_const_intnl_SystemString: %SystemString, null\r\n
     \   __23_const_intnl_SystemString: %SystemString, null\r\n    __24_const_intnl_SystemString:
-    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
-    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
-    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
-    \   __7_const_intnl_SystemString: %SystemString, null\r\n    __8_const_intnl_SystemString:
-    %SystemString, null\r\n    __9_const_intnl_SystemString: %SystemString, null\r\n
-    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_DelayTimer:
-    %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_ResetTransform: %VRCUdonUdonBehaviour,
-    null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __0_const_intnl_SystemUInt32:
-    %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
-    null\r\n    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __0_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __1_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __2_intnl_SystemBoolean: %SystemBoolean, null\r\n    __3_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __4_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __5_intnl_SystemBoolean: %SystemBoolean, null\r\n    __6_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __7_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __0_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_UnityEngineComponentArray:
+    %SystemString, null\r\n    __25_const_intnl_SystemString: %SystemString, null\r\n
+    \   __3_const_intnl_SystemString: %SystemString, null\r\n    __4_const_intnl_SystemString:
+    %SystemString, null\r\n    __5_const_intnl_SystemString: %SystemString, null\r\n
+    \   __6_const_intnl_SystemString: %SystemString, null\r\n    __7_const_intnl_SystemString:
+    %SystemString, null\r\n    __8_const_intnl_SystemString: %SystemString, null\r\n
+    \   __9_const_intnl_SystemString: %SystemString, null\r\n    __0_const_intnl_SystemType:
+    %SystemType, null\r\n    __0_const_intnl_DelayTimer: %VRCUdonUdonBehaviour, null\r\n
+    \   __0_const_intnl_GameManager: %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_ResetTransform:
+    %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __5_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __6_intnl_SystemBoolean: %SystemBoolean, null\r\n    __7_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent: %UnityEngineComponent,
+    null\r\n    __1_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_UnityEngineComponentArray:
     %UnityEngineComponentArray, null\r\n    __1_intnl_UnityEngineComponentArray: %UnityEngineComponentArray,
-    null\r\n    __0_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __0_intnl_SystemInt32:
+    null\r\n    __2_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
+    \   __0_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __0_intnl_SystemInt32:
     %SystemInt32, null\r\n    __1_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n
-    \   __1_intnl_SystemInt32: %SystemInt32, null\r\n    __10_intnl_SystemInt32: %SystemInt32,
-    null\r\n    __2_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __2_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __3_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n
-    \   __3_intnl_SystemInt32: %SystemInt32, null\r\n    __4_intnl_SystemInt32: %SystemInt32,
-    null\r\n    __5_intnl_SystemInt32: %SystemInt32, null\r\n    __6_intnl_SystemInt32:
+    \   __1_intnl_SystemInt32: %SystemInt32, null\r\n    __2_intnl_returnValSymbol_Int32:
+    %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __3_intnl_returnValSymbol_Int32:
+    %SystemInt32, null\r\n    __3_intnl_SystemInt32: %SystemInt32, null\r\n    __4_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __5_intnl_SystemInt32: %SystemInt32, null\r\n    __6_intnl_SystemInt32:
     %SystemInt32, null\r\n    __7_intnl_SystemInt32: %SystemInt32, null\r\n    __8_intnl_SystemInt32:
     %SystemInt32, null\r\n    __9_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __1_intnl_SystemInt64: %SystemInt64, null\r\n    __0_intnl_SystemObject:
+    %SystemInt64, null\r\n    __1_intnl_SystemInt64: %SystemInt64, null\r\n    __2_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __3_intnl_SystemInt64: %SystemInt64, null\r\n    __0_intnl_SystemObject:
     %SystemObject, null\r\n    __1_intnl_SystemObject: %SystemObject, null\r\n    __2_intnl_SystemObject:
-    %SystemObject, null\r\n    __3_intnl_SystemObject: %SystemObject, null\r\n    __0_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __1_intnl_SystemSingle: %SystemSingle, null\r\n    __2_intnl_SystemSingle:
-    %SystemSingle, null\r\n    __0_intnl_AudioManager: %VRCUdonUdonBehaviour, null\r\n
-    \   __0_intnl_DelayTimer: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_ResetTransform:
-    %VRCUdonUdonBehaviour, null\r\n    __0_intnl_returnValSymbol_ScoreData: %VRCUdonUdonBehaviour,
-    null\r\n    __0_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_ScoreManager:
-    %VRCUdonUdonBehaviour, null\r\n    __1_intnl_DelayTimer: %VRCUdonUdonBehaviour,
+    %SystemObject, null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __1_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __0_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __0_intnl_AudioManager: %VRCUdonUdonBehaviour,
+    null\r\n    __0_intnl_DelayTimer: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_GameManager:
+    %VRCUdonUdonBehaviour, null\r\n    __0_intnl_NameManager: %VRCUdonUdonBehaviour,
+    null\r\n    __0_intnl_ResetTransform: %VRCUdonUdonBehaviour, null\r\n    __1_intnl_DelayTimer:
+    %VRCUdonUdonBehaviour, null\r\n    __1_intnl_GameManager: %VRCUdonUdonBehaviour,
     null\r\n    __1_intnl_ResetTransform: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_oldReturnLoc_UInt32:
     %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n
-    \   __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __2_intnl_oldReturnLoc_UInt32:
-    %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n
-    \       \r\n         # using UnityEngine;\r\n        \r\n         # using VRC.Udon;\r\n
-    \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # public class
-    GunController : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # int
-    playerID;\r\n        \r\n         # int ATK;\r\n        \r\n         # int bulletNumMax;\r\n
+    \   __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __0_intnl_VRCSDKBaseVRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
+    null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n        \r\n
+    \        # using UnityEngine;\r\n        \r\n         # using VRC.Udon;\r\n        \r\n
+    \        # using VRC.SDKBase;\r\n        \r\n         # public class GunController
+    : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # int playerID;\r\n
+    \       \r\n         # int ATK;\r\n        \r\n         # int bulletNumMax;\r\n
     \       \r\n         # int bulletNum;\r\n        \r\n         # [SerializeField]
     Bullet bullet;\r\n        \r\n         # ResetTransform resetPosition;\r\n        \r\n
-    \        # DelayTimer delayTimer;\r\n        \r\n         # GameManager gameManager;\r\n
-    \       \r\n         # AudioManager audioManager;\r\n        \r\n         # void
+    \        # DelayTimer delayTimer;\r\n        \r\n         # AudioManager audioManager;\r\n
+    \       \r\n         # GameManager gameManager;\r\n        \r\n         # void
     Start()\r\n    .export _start\r\n        \r\n    _start:\r\n        \r\n        PUSH,
     __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # resetPosition
@@ -161,9 +165,9 @@ MonoBehaviour:
     \       PUSH, delayTimer\r\n        PUSH, __2_const_intnl_SystemString\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
-    \        # public void InitData(int _playerID, int _ATK, int _bulletNumMax, GameManager
-    _gameManager)\r\n    .export InitData\r\n        \r\n    InitData:\r\n        \r\n
-    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \        # public void InitData(int _playerID, int _ATK, int _bulletNumMax)\r\n
+    \   .export InitData\r\n        \r\n    InitData:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # playerID     =
     _playerID;\r\n        PUSH, __0__playerID_Int32\r\n        PUSH, playerID\r\n
     \       COPY\r\n        \r\n         # ATK          = _ATK;\r\n        PUSH, __0__ATK_Int32\r\n
@@ -171,10 +175,42 @@ MonoBehaviour:
     \       PUSH, __0__bulletNumMax_Int32\r\n        PUSH, bulletNumMax\r\n        COPY\r\n
     \       \r\n         # bulletNum    = _bulletNumMax;\r\n        PUSH, __0__bulletNumMax_Int32\r\n
     \       PUSH, bulletNum\r\n        COPY\r\n        \r\n         # gameManager
-    \ = _gameManager;\r\n        PUSH, __0__gameManager_GameManager\r\n        PUSH,
-    gameManager\r\n        COPY\r\n        \r\n         # audioManager = gameManager.GetAudioManager();\r\n
-    \       PUSH, gameManager\r\n        PUSH, __3_const_intnl_SystemString\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    = transform.root.GetComponent<GameManager>();\r\n        PUSH, __0_this_intnl_UnityEngineTransform\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        EXTERN, \"UnityEngineTransform.__get_root__UnityEngineTransform\"\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __0_const_intnl_SystemType\r\n
+    \       PUSH, __2_intnl_UnityEngineComponentArray\r\n        EXTERN, \"UnityEngineComponent.__GetComponents__SystemType__UnityEngineComponentArray\"\r\n
+    \       PUSH, __0_const_intnl_GameManager\r\n        PUSH, __0_intnl_GameManager\r\n
+    \       COPY\r\n        PUSH, __2_intnl_UnityEngineComponentArray\r\n        PUSH,
+    __3_intnl_SystemInt32\r\n        EXTERN, \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n
+    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __4_intnl_SystemInt32\r\n
+    \       COPY\r\n        PUSH, __4_intnl_SystemInt32\r\n        PUSH, __3_intnl_SystemInt32\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000006A4\r\n
+    \       PUSH, __2_intnl_UnityEngineComponentArray\r\n        PUSH, __4_intnl_SystemInt32\r\n
+    \       PUSH, __1_intnl_UnityEngineComponent\r\n        EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __1_intnl_UnityEngineComponent\r\n        PUSH, __1_intnl_GameManager\r\n
+    \       COPY\r\n        PUSH, __1_intnl_GameManager\r\n        PUSH, __0_const_intnl_SystemString\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __0_const_intnl_SystemObject\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000608\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemInt64\r\n
+    \       EXTERN, \"SystemConvert.__ToInt64__SystemObject__SystemInt64\"\r\n        PUSH,
+    __3_intnl_SystemInt64\r\n        PUSH, __2_intnl_SystemInt64\r\n        COPY\r\n
+    \       JUMP, 0x0000061C\r\n        PUSH, __1_const_intnl_SystemInt64\r\n        PUSH,
+    __2_intnl_SystemInt64\r\n        COPY\r\n        PUSH, __2_intnl_SystemInt64\r\n
+    \       PUSH, __3_const_intnl_SystemInt64\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000668\r\n
+    \       PUSH, __1_intnl_GameManager\r\n        PUSH, __0_intnl_GameManager\r\n
+    \       COPY\r\n        JUMP, 0x000006A4\r\n        PUSH, __4_intnl_SystemInt32\r\n
+    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __5_intnl_SystemInt32\r\n
+    \       EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
+    \       PUSH, __5_intnl_SystemInt32\r\n        PUSH, __4_intnl_SystemInt32\r\n
+    \       COPY\r\n        JUMP, 0x00000520\r\n        PUSH, __0_intnl_GameManager\r\n
+    \       PUSH, gameManager\r\n        COPY\r\n        \r\n         # audioManager
+    = gameManager.GetAudioManager();\r\n        PUSH, gameManager\r\n        PUSH,
+    __3_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       PUSH, gameManager\r\n        PUSH, __4_const_intnl_SystemString\r\n        PUSH,
     __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
     \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __0_intnl_AudioManager\r\n
@@ -187,32 +223,32 @@ MonoBehaviour:
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # private void Update()\r\n    .export _update\r\n        \r\n    _update:\r\n
     \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if(Input.GetMouseButtonDown(0))\r\n
-    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __3_intnl_SystemBoolean\r\n
-    \       EXTERN, \"UnityEngineInput.__GetMouseButtonDown__SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000077C\r\n
-    \       \r\n         # {\r\n        \r\n         # if (bulletNum <= 0) return;\r\n
-    \       PUSH, bulletNum\r\n        PUSH, __3_intnl_SystemInt32\r\n        COPY\r\n
-    \       PUSH, __3_intnl_SystemInt32\r\n        PUSH, __0_const_intnl_SystemInt32\r\n
-    \       PUSH, __4_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005E4\r\n
+    \       COPY\r\n        \r\n         # {\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n        \r\n         # public override void OnPickupUseDown()\r\n
+    \   .export _onPickupUseDown\r\n        \r\n    _onPickupUseDown:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (bulletNum
+    <= 0) return;\r\n        PUSH, bulletNum\r\n        PUSH, __6_intnl_SystemInt32\r\n
+    \       COPY\r\n        PUSH, __6_intnl_SystemInt32\r\n        PUSH, __0_const_intnl_SystemInt32\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000007D4\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n         #
     bullet.Shot();\r\n        PUSH, bullet\r\n        PUSH, __7_const_intnl_SystemString\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       \r\n         # ShotSE();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __0_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000998\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000988\r\n
     \       PUSH, __0_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        \r\n         # bulletNum--;\r\n        PUSH, bulletNum\r\n
-    \       PUSH, __4_intnl_SystemInt32\r\n        COPY\r\n        PUSH, bulletNum\r\n
-    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __5_intnl_SystemInt32\r\n
+    \       PUSH, __7_intnl_SystemInt32\r\n        COPY\r\n        PUSH, bulletNum\r\n
+    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __8_intnl_SystemInt32\r\n
     \       EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       PUSH, __5_intnl_SystemInt32\r\n        PUSH, bulletNum\r\n        COPY\r\n
+    \       PUSH, __8_intnl_SystemInt32\r\n        PUSH, bulletNum\r\n        COPY\r\n
     \       \r\n         # if (bulletNum <= 0)\r\n        PUSH, bulletNum\r\n        PUSH,
-    __6_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __6_intnl_SystemInt32\r\n
-    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    __9_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __9_intnl_SystemInt32\r\n
+    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __7_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000077C\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000096C\r\n
     \       \r\n         # {\r\n        \r\n         # delayTimer.StartTimer(0, this,
     \"Reload\", 1);\r\n        PUSH, delayTimer\r\n        PUSH, __9_const_intnl_SystemString\r\n
     \       PUSH, __0_const_intnl_SystemInt32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
@@ -223,45 +259,6 @@ MonoBehaviour:
     \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __0_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n        PUSH,
     delayTimer\r\n        PUSH, __12_const_intnl_SystemString\r\n        PUSH, __0_intnl_SystemSingle\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, delayTimer\r\n        PUSH, __13_const_intnl_SystemString\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
-    \        # public override void OnPickupUseDown()\r\n    .export _onPickupUseDown\r\n
-    \       \r\n    _onPickupUseDown:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # if (bulletNum <= 0) return;\r\n        PUSH, bulletNum\r\n
-    \       PUSH, __7_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __7_intnl_SystemInt32\r\n
-    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __6_intnl_SystemBoolean\r\n
-    \       EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __6_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000007E4\r\n
-    \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n         #
-    bullet.Shot();\r\n        PUSH, bullet\r\n        PUSH, __7_const_intnl_SystemString\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       \r\n         # ShotSE();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000998\r\n
-    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        \r\n         # bulletNum--;\r\n        PUSH, bulletNum\r\n
-    \       PUSH, __8_intnl_SystemInt32\r\n        COPY\r\n        PUSH, bulletNum\r\n
-    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __9_intnl_SystemInt32\r\n
-    \       EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n
-    \       PUSH, __9_intnl_SystemInt32\r\n        PUSH, bulletNum\r\n        COPY\r\n
-    \       \r\n         # if (bulletNum <= 0)\r\n        PUSH, bulletNum\r\n        PUSH,
-    __10_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __10_intnl_SystemInt32\r\n
-    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __7_intnl_SystemBoolean\r\n
-    \       EXTERN, \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
-    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000097C\r\n
-    \       \r\n         # {\r\n        \r\n         # delayTimer.StartTimer(0, this,
-    \"Reload\", 1);\r\n        PUSH, delayTimer\r\n        PUSH, __9_const_intnl_SystemString\r\n
-    \       PUSH, __0_const_intnl_SystemInt32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, delayTimer\r\n        PUSH, __10_const_intnl_SystemString\r\n        PUSH,
-    __0_this_intnl_GunController\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, delayTimer\r\n        PUSH, __11_const_intnl_SystemString\r\n        PUSH,
-    __8_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, __1_const_intnl_SystemInt32\r\n        PUSH, __1_intnl_SystemSingle\r\n
-    \       EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n        PUSH,
-    delayTimer\r\n        PUSH, __12_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemSingle\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __13_const_intnl_SystemString\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
@@ -277,9 +274,9 @@ MonoBehaviour:
     \       COPY\r\n        \r\n         # {\r\n        \r\n         # bulletNum =
     bulletNumMax;\r\n        PUSH, bulletNumMax\r\n        PUSH, bulletNum\r\n        COPY\r\n
     \       \r\n         # ReloadSE();\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __2_const_intnl_exitJumpLoc_UInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000A40\r\n
-    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000A30\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
     \       \r\n         # public void ReloadSE()\r\n    .export ReloadSE\r\n        \r\n
     \   ReloadSE:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
@@ -295,6 +292,25 @@ MonoBehaviour:
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __17_const_intnl_SystemString\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       \r\n         # gameManager.GetNameManager().SetNameSync(Networking.LocalPlayer,
+    playerID, Networking.LocalPlayer.displayName);\r\n        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n
+    \       EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n
+    \       PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi\r\n        PUSH, __0_intnl_SystemString\r\n
+    \       EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n
+    \       PUSH, gameManager\r\n        PUSH, __18_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, gameManager\r\n        PUSH, __19_const_intnl_SystemString\r\n        PUSH,
+    __2_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __0_intnl_NameManager\r\n
+    \       COPY\r\n        PUSH, __0_intnl_NameManager\r\n        PUSH, __20_const_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_NameManager\r\n        PUSH, __21_const_intnl_SystemString\r\n
+    \       PUSH, playerID\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_NameManager\r\n        PUSH, __22_const_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __0_intnl_NameManager\r\n        PUSH, __23_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # public override void OnDrop()\r\n    .export _onDrop\r\n        \r\n
     \   _onDrop:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH,
@@ -305,10 +321,10 @@ MonoBehaviour:
     \       PUSH, delayTimer\r\n        PUSH, __10_const_intnl_SystemString\r\n        PUSH,
     __0_this_intnl_GunController\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __11_const_intnl_SystemString\r\n        PUSH,
-    __18_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, __3_const_intnl_SystemInt32\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    __24_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       PUSH, __3_const_intnl_SystemInt32\r\n        PUSH, __1_intnl_SystemSingle\r\n
     \       EXTERN, \"SystemConvert.__ToSingle__SystemInt32__SystemSingle\"\r\n        PUSH,
-    delayTimer\r\n        PUSH, __12_const_intnl_SystemString\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    delayTimer\r\n        PUSH, __12_const_intnl_SystemString\r\n        PUSH, __1_intnl_SystemSingle\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __13_const_intnl_SystemString\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
@@ -317,7 +333,7 @@ MonoBehaviour:
     \   ResetPosition:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
     {\r\n        \r\n         # resetPosition.Execute();\r\n        PUSH, resetPosition\r\n
-    \       PUSH, __19_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, __25_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # public int GetPlayerID()     { return playerID; }\r\n    .export GetPlayerID\r\n
     \       \r\n    GetPlayerID:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
@@ -339,24 +355,6 @@ MonoBehaviour:
     }\r\n    .export GetBulletNumMax\r\n        \r\n    GetBulletNumMax:\r\n        \r\n
     \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
     \       COPY\r\n        PUSH, bulletNumMax\r\n        PUSH, __3_intnl_returnValSymbol_Int32\r\n
-    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
-    __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public ScoreData
-    GetScoreData() { return gameManager.GetScoreManager().GetData(playerID); }\r\n
-    \   .export GetScoreData\r\n        \r\n    GetScoreData:\r\n        \r\n        PUSH,
-    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        PUSH, gameManager\r\n        PUSH, __20_const_intnl_SystemString\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       PUSH, gameManager\r\n        PUSH, __21_const_intnl_SystemString\r\n        PUSH,
-    __2_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __0_intnl_ScoreManager\r\n
-    \       COPY\r\n        PUSH, __0_intnl_ScoreManager\r\n        PUSH, __22_const_intnl_SystemString\r\n
-    \       PUSH, playerID\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
-    \       PUSH, __0_intnl_ScoreManager\r\n        PUSH, __23_const_intnl_SystemString\r\n
-    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       PUSH, __0_intnl_ScoreManager\r\n        PUSH, __24_const_intnl_SystemString\r\n
-    \       PUSH, __3_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __3_intnl_SystemObject\r\n        PUSH, __0_intnl_ScoreData\r\n
-    \       COPY\r\n        PUSH, __0_intnl_ScoreData\r\n        PUSH, __0_intnl_returnValSymbol_ScoreData\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
     __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
   assemblyError: 
@@ -669,31 +667,31 @@ MonoBehaviour:
     - startInstruction: 0
       endInstruction: -1
       startSourceChar: 311
-      endSourceChar: 341
+      endSourceChar: 343
       line: 15
       lineChar: 4
-      spanCodeSection: "GameManager gameManager;\r\n    "
+      spanCodeSection: "AudioManager audioManager;\r\n    "
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 341
-      endSourceChar: 341
+      startSourceChar: 343
+      endSourceChar: 343
       line: 16
       lineChar: 4
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 341
-      endSourceChar: 341
+      startSourceChar: 343
+      endSourceChar: 343
       line: 16
       lineChar: 4
       spanCodeSection: 
     - startInstruction: 0
       endInstruction: -1
-      startSourceChar: 341
+      startSourceChar: 343
       endSourceChar: 375
       line: 16
       lineChar: 4
-      spanCodeSection: "AudioManager audioManager;\r\n\r\n    "
+      spanCodeSection: "GameManager gameManager;\r\n\r\n    "
     - startInstruction: 0
       endInstruction: 19
       startSourceChar: 375
@@ -816,1062 +814,940 @@ MonoBehaviour:
     - startInstruction: 1092
       endInstruction: 1111
       startSourceChar: 560
-      endSourceChar: 656
+      endSourceChar: 630
       line: 25
       lineChar: 4
-      spanCodeSection: "public void InitData(int _playerID, int _ATK, int _bulletNumMax,
-        GameManager _gameManager)\r\n    "
+      spanCodeSection: "public void InitData(int _playerID, int _ATK, int _bulletNumMax)\r\n
+        \   "
     - startInstruction: 1112
       endInstruction: 1111
-      startSourceChar: 656
-      endSourceChar: 667
+      startSourceChar: 630
+      endSourceChar: 641
       line: 26
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 1112
       endInstruction: 1111
-      startSourceChar: 667
-      endSourceChar: 667
+      startSourceChar: 641
+      endSourceChar: 641
       line: 27
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 1112
       endInstruction: 1111
-      startSourceChar: 667
-      endSourceChar: 682
+      startSourceChar: 641
+      endSourceChar: 656
       line: 27
       lineChar: 8
       spanCodeSection: 'playerID     = '
     - startInstruction: 1112
       endInstruction: 1131
-      startSourceChar: 682
-      endSourceChar: 702
+      startSourceChar: 656
+      endSourceChar: 676
       line: 27
       lineChar: 23
       spanCodeSection: "_playerID;\r\n        "
     - startInstruction: 1132
       endInstruction: 1131
-      startSourceChar: 702
-      endSourceChar: 702
+      startSourceChar: 676
+      endSourceChar: 676
       line: 28
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 1132
       endInstruction: 1131
-      startSourceChar: 702
-      endSourceChar: 717
+      startSourceChar: 676
+      endSourceChar: 691
       line: 28
       lineChar: 8
       spanCodeSection: 'ATK          = '
     - startInstruction: 1132
       endInstruction: 1151
-      startSourceChar: 717
-      endSourceChar: 732
+      startSourceChar: 691
+      endSourceChar: 706
       line: 28
       lineChar: 23
       spanCodeSection: "_ATK;\r\n        "
     - startInstruction: 1152
       endInstruction: 1151
-      startSourceChar: 732
-      endSourceChar: 732
+      startSourceChar: 706
+      endSourceChar: 706
       line: 29
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 1152
       endInstruction: 1151
-      startSourceChar: 732
-      endSourceChar: 747
+      startSourceChar: 706
+      endSourceChar: 721
       line: 29
       lineChar: 8
       spanCodeSection: 'bulletNumMax = '
     - startInstruction: 1152
       endInstruction: 1171
-      startSourceChar: 747
-      endSourceChar: 771
+      startSourceChar: 721
+      endSourceChar: 745
       line: 29
       lineChar: 23
       spanCodeSection: "_bulletNumMax;\r\n        "
     - startInstruction: 1172
       endInstruction: 1171
-      startSourceChar: 771
-      endSourceChar: 771
+      startSourceChar: 745
+      endSourceChar: 745
       line: 30
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 1172
       endInstruction: 1171
-      startSourceChar: 771
-      endSourceChar: 786
+      startSourceChar: 745
+      endSourceChar: 760
       line: 30
       lineChar: 8
       spanCodeSection: 'bulletNum    = '
     - startInstruction: 1172
       endInstruction: 1191
-      startSourceChar: 786
-      endSourceChar: 810
+      startSourceChar: 760
+      endSourceChar: 784
       line: 30
       lineChar: 23
       spanCodeSection: "_bulletNumMax;\r\n        "
     - startInstruction: 1192
       endInstruction: 1191
-      startSourceChar: 810
-      endSourceChar: 810
+      startSourceChar: 784
+      endSourceChar: 784
       line: 31
       lineChar: 8
       spanCodeSection: 
     - startInstruction: 1192
       endInstruction: 1191
-      startSourceChar: 810
-      endSourceChar: 825
+      startSourceChar: 784
+      endSourceChar: 798
       line: 31
       lineChar: 8
-      spanCodeSection: 'gameManager  = '
+      spanCodeSection: 'gameManager = '
     - startInstruction: 1192
-      endInstruction: 1211
-      startSourceChar: 825
-      endSourceChar: 941
+      endInstruction: 1191
+      startSourceChar: 798
+      endSourceChar: 798
       line: 31
-      lineChar: 23
-      spanCodeSection: "_gameManager;\r\n        //gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer,
+      lineChar: 22
+      spanCodeSection: 
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 798
+      endSourceChar: 798
+      line: 31
+      lineChar: 22
+      spanCodeSection: 
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 798
+      endSourceChar: 798
+      line: 31
+      lineChar: 22
+      spanCodeSection: 
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 798
+      endSourceChar: 808
+      line: 31
+      lineChar: 22
+      spanCodeSection: transform.
+    - startInstruction: 1192
+      endInstruction: 1191
+      startSourceChar: 808
+      endSourceChar: 813
+      line: 31
+      lineChar: 32
+      spanCodeSection: root.
+    - startInstruction: 1192
+      endInstruction: 1215
+      startSourceChar: 813
+      endSourceChar: 825
+      line: 31
+      lineChar: 37
+      spanCodeSection: GetComponent
+    - startInstruction: 1216
+      endInstruction: 1215
+      startSourceChar: 825
+      endSourceChar: 826
+      line: 31
+      lineChar: 49
+      spanCodeSection: <
+    - startInstruction: 1216
+      endInstruction: 1719
+      startSourceChar: 826
+      endSourceChar: 944
+      line: 31
+      lineChar: 50
+      spanCodeSection: "GameManager>();\r\n        //gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer,
         playerID);\r\n        "
-    - startInstruction: 1212
-      endInstruction: 1211
-      startSourceChar: 941
-      endSourceChar: 941
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 944
+      endSourceChar: 944
       line: 33
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1212
-      endInstruction: 1211
-      startSourceChar: 941
-      endSourceChar: 956
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 944
+      endSourceChar: 959
       line: 33
       lineChar: 8
       spanCodeSection: 'audioManager = '
-    - startInstruction: 1212
-      endInstruction: 1211
-      startSourceChar: 956
-      endSourceChar: 956
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 959
+      endSourceChar: 959
       line: 33
       lineChar: 23
       spanCodeSection: 
-    - startInstruction: 1212
-      endInstruction: 1211
-      startSourceChar: 956
-      endSourceChar: 956
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 959
+      endSourceChar: 959
       line: 33
       lineChar: 23
       spanCodeSection: 
-    - startInstruction: 1212
-      endInstruction: 1211
-      startSourceChar: 956
-      endSourceChar: 968
+    - startInstruction: 1720
+      endInstruction: 1719
+      startSourceChar: 959
+      endSourceChar: 971
       line: 33
       lineChar: 23
       spanCodeSection: gameManager.
-    - startInstruction: 1212
-      endInstruction: 1307
-      startSourceChar: 968
-      endSourceChar: 996
+    - startInstruction: 1720
+      endInstruction: 1815
+      startSourceChar: 971
+      endSourceChar: 999
       line: 33
       lineChar: 35
       spanCodeSection: "GetAudioManager();\r\n        "
-    - startInstruction: 1308
-      endInstruction: 1307
-      startSourceChar: 996
-      endSourceChar: 996
+    - startInstruction: 1816
+      endInstruction: 1815
+      startSourceChar: 999
+      endSourceChar: 999
       line: 34
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1308
-      endInstruction: 1307
-      startSourceChar: 996
-      endSourceChar: 1012
+    - startInstruction: 1816
+      endInstruction: 1815
+      startSourceChar: 999
+      endSourceChar: 1015
       line: 34
       lineChar: 8
       spanCodeSection: bullet.InitData(
-    - startInstruction: 1308
-      endInstruction: 1371
-      startSourceChar: 1012
-      endSourceChar: 1033
+    - startInstruction: 1816
+      endInstruction: 1879
+      startSourceChar: 1015
+      endSourceChar: 1036
       line: 34
       lineChar: 24
       spanCodeSection: "this);\r\n    }\r\n\r\n    "
-    - startInstruction: 1372
-      endInstruction: 1391
-      startSourceChar: 1033
-      endSourceChar: 1060
+    - startInstruction: 1880
+      endInstruction: 1899
+      startSourceChar: 1036
+      endSourceChar: 1063
       line: 37
       lineChar: 4
       spanCodeSection: "private void Update()\r\n    "
-    - startInstruction: 1392
-      endInstruction: 1391
-      startSourceChar: 1060
-      endSourceChar: 1071
+    - startInstruction: 1900
+      endInstruction: 1907
+      startSourceChar: 1063
+      endSourceChar: 1425
       line: 38
       lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 1392
-      endInstruction: 1391
-      startSourceChar: 1071
-      endSourceChar: 1074
-      line: 39
-      lineChar: 8
-      spanCodeSection: if(
-    - startInstruction: 1392
-      endInstruction: 1391
-      startSourceChar: 1074
-      endSourceChar: 1099
-      line: 39
-      lineChar: 11
-      spanCodeSection: Input.GetMouseButtonDown(
-    - startInstruction: 1392
-      endInstruction: 1431
-      startSourceChar: 1099
-      endSourceChar: 1112
-      line: 39
-      lineChar: 36
-      spanCodeSection: "0))\r\n        "
-    - startInstruction: 1432
-      endInstruction: 1431
-      startSourceChar: 1112
-      endSourceChar: 1127
-      line: 40
-      lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 1432
-      endInstruction: 1431
-      startSourceChar: 1127
-      endSourceChar: 1131
-      line: 41
-      lineChar: 12
-      spanCodeSection: if (
-    - startInstruction: 1432
-      endInstruction: 1431
-      startSourceChar: 1131
-      endSourceChar: 1131
-      line: 41
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 1432
-      endInstruction: 1451
-      startSourceChar: 1131
-      endSourceChar: 1144
-      line: 41
-      lineChar: 16
-      spanCodeSection: 'bulletNum <= '
-    - startInstruction: 1452
-      endInstruction: 1499
-      startSourceChar: 1144
-      endSourceChar: 1147
-      line: 41
-      lineChar: 29
-      spanCodeSection: '0) '
-    - startInstruction: 1500
-      endInstruction: 1507
-      startSourceChar: 1147
-      endSourceChar: 1168
-      line: 41
-      lineChar: 32
-      spanCodeSection: "return;\r\n            "
-    - startInstruction: 1508
-      endInstruction: 1507
-      startSourceChar: 1168
-      endSourceChar: 1168
-      line: 42
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1508
-      endInstruction: 1507
-      startSourceChar: 1168
-      endSourceChar: 1168
-      line: 42
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1508
-      endInstruction: 1507
-      startSourceChar: 1168
-      endSourceChar: 1168
-      line: 42
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1508
-      endInstruction: 1507
-      startSourceChar: 1168
-      endSourceChar: 1175
-      line: 42
-      lineChar: 12
-      spanCodeSection: bullet.
-    - startInstruction: 1508
-      endInstruction: 1531
-      startSourceChar: 1175
-      endSourceChar: 1196
-      line: 42
-      lineChar: 19
-      spanCodeSection: "Shot();\r\n            "
-    - startInstruction: 1532
-      endInstruction: 1531
-      startSourceChar: 1196
-      endSourceChar: 1196
-      line: 43
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1532
-      endInstruction: 1531
-      startSourceChar: 1196
-      endSourceChar: 1196
-      line: 43
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1532
-      endInstruction: 1599
-      startSourceChar: 1196
-      endSourceChar: 1221
-      line: 43
-      lineChar: 12
-      spanCodeSection: "ShotSE();\r\n\r\n            "
-    - startInstruction: 1600
-      endInstruction: 1599
-      startSourceChar: 1221
-      endSourceChar: 1221
-      line: 45
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1600
-      endInstruction: 1599
-      startSourceChar: 1221
-      endSourceChar: 1221
-      line: 45
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 1600
-      endInstruction: 1671
-      startSourceChar: 1221
-      endSourceChar: 1247
-      line: 45
-      lineChar: 12
-      spanCodeSection: "bulletNum--;\r\n            "
-    - startInstruction: 1672
-      endInstruction: 1671
-      startSourceChar: 1247
-      endSourceChar: 1251
-      line: 46
-      lineChar: 12
-      spanCodeSection: if (
-    - startInstruction: 1672
-      endInstruction: 1671
-      startSourceChar: 1251
-      endSourceChar: 1251
-      line: 46
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 1672
-      endInstruction: 1691
-      startSourceChar: 1251
-      endSourceChar: 1264
-      line: 46
-      lineChar: 16
-      spanCodeSection: 'bulletNum <= '
-    - startInstruction: 1692
-      endInstruction: 1739
-      startSourceChar: 1264
-      endSourceChar: 1280
-      line: 46
-      lineChar: 29
-      spanCodeSection: "0)\r\n            "
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1280
-      endSourceChar: 1299
-      line: 47
-      lineChar: 12
-      spanCodeSection: "{\r\n                "
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1299
-      endSourceChar: 1299
-      line: 48
-      lineChar: 16
-      spanCodeSection: 
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1299
-      endSourceChar: 1321
-      line: 48
-      lineChar: 16
-      spanCodeSection: delayTimer.StartTimer(
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1321
-      endSourceChar: 1324
-      line: 48
-      lineChar: 38
-      spanCodeSection: '0, '
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1324
-      endSourceChar: 1330
-      line: 48
-      lineChar: 41
-      spanCodeSection: 'this, '
-    - startInstruction: 1740
-      endInstruction: 1739
-      startSourceChar: 1330
-      endSourceChar: 1340
-      line: 48
-      lineChar: 47
-      spanCodeSection: '"Reload", '
-    - startInstruction: 1740
-      endInstruction: 1923
-      startSourceChar: 1340
-      endSourceChar: 1398
-      line: 48
-      lineChar: 57
-      spanCodeSection: "1);\r\n            }\r\n        }\r\n            \r\n    }\r\n\r\n
+      spanCodeSection: "{\r\n        /*\r\n        if(Input.GetMouseButtonDown(0))\r\n
+        \       {\r\n            if (bulletNum <= 0) return;\r\n            bullet.Shot();\r\n
+        \           ShotSE();\r\n\r\n            bulletNum--;\r\n            if (bulletNum
+        <= 0)\r\n            {\r\n                delayTimer.StartTimer(0, this, \"Reload\",
+        1);\r\n            }\r\n        }\r\n        */\r\n            \r\n    }\r\n\r\n
         \   "
-    - startInstruction: 1924
-      endInstruction: 1943
-      startSourceChar: 1398
-      endSourceChar: 1442
-      line: 54
+    - startInstruction: 1908
+      endInstruction: 1927
+      startSourceChar: 1425
+      endSourceChar: 1469
+      line: 56
       lineChar: 4
       spanCodeSection: "public override void OnPickupUseDown()\r\n    "
-    - startInstruction: 1944
-      endInstruction: 1943
-      startSourceChar: 1442
-      endSourceChar: 1453
-      line: 55
+    - startInstruction: 1928
+      endInstruction: 1927
+      startSourceChar: 1469
+      endSourceChar: 1480
+      line: 57
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1944
-      endInstruction: 1943
-      startSourceChar: 1453
-      endSourceChar: 1457
-      line: 56
+    - startInstruction: 1928
+      endInstruction: 1927
+      startSourceChar: 1480
+      endSourceChar: 1484
+      line: 58
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 1944
-      endInstruction: 1943
-      startSourceChar: 1457
-      endSourceChar: 1457
-      line: 56
+    - startInstruction: 1928
+      endInstruction: 1927
+      startSourceChar: 1484
+      endSourceChar: 1484
+      line: 58
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1944
-      endInstruction: 1963
-      startSourceChar: 1457
-      endSourceChar: 1470
-      line: 56
+    - startInstruction: 1928
+      endInstruction: 1947
+      startSourceChar: 1484
+      endSourceChar: 1497
+      line: 58
       lineChar: 12
       spanCodeSection: 'bulletNum <= '
-    - startInstruction: 1964
-      endInstruction: 2011
-      startSourceChar: 1470
-      endSourceChar: 1473
-      line: 56
+    - startInstruction: 1948
+      endInstruction: 1995
+      startSourceChar: 1497
+      endSourceChar: 1500
+      line: 58
       lineChar: 25
       spanCodeSection: '0) '
-    - startInstruction: 2012
-      endInstruction: 2019
-      startSourceChar: 1473
-      endSourceChar: 1490
-      line: 56
+    - startInstruction: 1996
+      endInstruction: 2003
+      startSourceChar: 1500
+      endSourceChar: 1517
+      line: 58
       lineChar: 28
       spanCodeSection: "return;\r\n        "
-    - startInstruction: 2020
-      endInstruction: 2019
-      startSourceChar: 1490
-      endSourceChar: 1490
-      line: 57
+    - startInstruction: 2004
+      endInstruction: 2003
+      startSourceChar: 1517
+      endSourceChar: 1517
+      line: 59
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2020
-      endInstruction: 2019
-      startSourceChar: 1490
-      endSourceChar: 1490
-      line: 57
+    - startInstruction: 2004
+      endInstruction: 2003
+      startSourceChar: 1517
+      endSourceChar: 1517
+      line: 59
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2020
-      endInstruction: 2019
-      startSourceChar: 1490
-      endSourceChar: 1490
-      line: 57
+    - startInstruction: 2004
+      endInstruction: 2003
+      startSourceChar: 1517
+      endSourceChar: 1517
+      line: 59
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2020
-      endInstruction: 2019
-      startSourceChar: 1490
-      endSourceChar: 1497
-      line: 57
+    - startInstruction: 2004
+      endInstruction: 2003
+      startSourceChar: 1517
+      endSourceChar: 1524
+      line: 59
       lineChar: 8
       spanCodeSection: bullet.
-    - startInstruction: 2020
-      endInstruction: 2043
-      startSourceChar: 1497
-      endSourceChar: 1514
-      line: 57
+    - startInstruction: 2004
+      endInstruction: 2027
+      startSourceChar: 1524
+      endSourceChar: 1541
+      line: 59
       lineChar: 15
       spanCodeSection: "Shot();\r\n        "
-    - startInstruction: 2044
-      endInstruction: 2043
-      startSourceChar: 1514
-      endSourceChar: 1514
-      line: 58
+    - startInstruction: 2028
+      endInstruction: 2027
+      startSourceChar: 1541
+      endSourceChar: 1541
+      line: 60
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2044
-      endInstruction: 2043
-      startSourceChar: 1514
-      endSourceChar: 1514
-      line: 58
+    - startInstruction: 2028
+      endInstruction: 2027
+      startSourceChar: 1541
+      endSourceChar: 1541
+      line: 60
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2044
-      endInstruction: 2111
-      startSourceChar: 1514
-      endSourceChar: 1535
-      line: 58
+    - startInstruction: 2028
+      endInstruction: 2095
+      startSourceChar: 1541
+      endSourceChar: 1562
+      line: 60
       lineChar: 8
       spanCodeSection: "ShotSE();\r\n\r\n        "
-    - startInstruction: 2112
-      endInstruction: 2111
-      startSourceChar: 1535
-      endSourceChar: 1535
-      line: 60
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 2112
-      endInstruction: 2111
-      startSourceChar: 1535
-      endSourceChar: 1535
-      line: 60
-      lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 2112
-      endInstruction: 2183
-      startSourceChar: 1535
-      endSourceChar: 1557
-      line: 60
-      lineChar: 8
-      spanCodeSection: "bulletNum--;\r\n        "
-    - startInstruction: 2184
-      endInstruction: 2183
-      startSourceChar: 1557
-      endSourceChar: 1561
-      line: 61
-      lineChar: 8
-      spanCodeSection: if (
-    - startInstruction: 2184
-      endInstruction: 2183
-      startSourceChar: 1561
-      endSourceChar: 1561
-      line: 61
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2184
-      endInstruction: 2203
-      startSourceChar: 1561
-      endSourceChar: 1574
-      line: 61
-      lineChar: 12
-      spanCodeSection: 'bulletNum <= '
-    - startInstruction: 2204
-      endInstruction: 2251
-      startSourceChar: 1574
-      endSourceChar: 1586
-      line: 61
-      lineChar: 25
-      spanCodeSection: "0)\r\n        "
-    - startInstruction: 2252
-      endInstruction: 2251
-      startSourceChar: 1586
-      endSourceChar: 1601
+    - startInstruction: 2096
+      endInstruction: 2095
+      startSourceChar: 1562
+      endSourceChar: 1562
       line: 62
       lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 2252
-      endInstruction: 2251
-      startSourceChar: 1601
+      spanCodeSection: 
+    - startInstruction: 2096
+      endInstruction: 2095
+      startSourceChar: 1562
+      endSourceChar: 1562
+      line: 62
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2096
+      endInstruction: 2167
+      startSourceChar: 1562
+      endSourceChar: 1584
+      line: 62
+      lineChar: 8
+      spanCodeSection: "bulletNum--;\r\n        "
+    - startInstruction: 2168
+      endInstruction: 2167
+      startSourceChar: 1584
+      endSourceChar: 1588
+      line: 63
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 2168
+      endInstruction: 2167
+      startSourceChar: 1588
+      endSourceChar: 1588
+      line: 63
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2168
+      endInstruction: 2187
+      startSourceChar: 1588
       endSourceChar: 1601
       line: 63
       lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2252
-      endInstruction: 2251
+      spanCodeSection: 'bulletNum <= '
+    - startInstruction: 2188
+      endInstruction: 2235
       startSourceChar: 1601
-      endSourceChar: 1623
+      endSourceChar: 1613
       line: 63
+      lineChar: 25
+      spanCodeSection: "0)\r\n        "
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1613
+      endSourceChar: 1628
+      line: 64
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1628
+      endSourceChar: 1628
+      line: 65
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1628
+      endSourceChar: 1650
+      line: 65
       lineChar: 12
       spanCodeSection: delayTimer.StartTimer(
-    - startInstruction: 2252
-      endInstruction: 2251
-      startSourceChar: 1623
-      endSourceChar: 1626
-      line: 63
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1650
+      endSourceChar: 1653
+      line: 65
       lineChar: 34
       spanCodeSection: '0, '
-    - startInstruction: 2252
-      endInstruction: 2251
-      startSourceChar: 1626
-      endSourceChar: 1632
-      line: 63
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1653
+      endSourceChar: 1659
+      line: 65
       lineChar: 37
       spanCodeSection: 'this, '
-    - startInstruction: 2252
-      endInstruction: 2251
-      startSourceChar: 1632
-      endSourceChar: 1642
-      line: 63
+    - startInstruction: 2236
+      endInstruction: 2235
+      startSourceChar: 1659
+      endSourceChar: 1669
+      line: 65
       lineChar: 43
       spanCodeSection: '"Reload", '
-    - startInstruction: 2252
-      endInstruction: 2435
-      startSourceChar: 1642
-      endSourceChar: 1671
-      line: 63
+    - startInstruction: 2236
+      endInstruction: 2419
+      startSourceChar: 1669
+      endSourceChar: 1698
+      line: 65
       lineChar: 53
       spanCodeSection: "1);\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 2436
-      endInstruction: 2455
-      startSourceChar: 1671
-      endSourceChar: 1697
-      line: 67
+    - startInstruction: 2420
+      endInstruction: 2439
+      startSourceChar: 1698
+      endSourceChar: 1724
+      line: 69
       lineChar: 4
       spanCodeSection: "public void ShotSE()\r\n    "
-    - startInstruction: 2456
-      endInstruction: 2455
-      startSourceChar: 1697
-      endSourceChar: 1708
-      line: 68
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1724
+      endSourceChar: 1735
+      line: 70
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2456
-      endInstruction: 2455
-      startSourceChar: 1708
-      endSourceChar: 1708
-      line: 69
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 71
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2456
-      endInstruction: 2455
-      startSourceChar: 1708
-      endSourceChar: 1708
-      line: 69
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 71
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2456
-      endInstruction: 2455
-      startSourceChar: 1708
-      endSourceChar: 1708
-      line: 69
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1735
+      endSourceChar: 1735
+      line: 71
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2456
-      endInstruction: 2455
-      startSourceChar: 1708
-      endSourceChar: 1721
-      line: 69
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1735
+      endSourceChar: 1748
+      line: 71
       lineChar: 8
       spanCodeSection: audioManager.
-    - startInstruction: 2456
-      endInstruction: 2487
-      startSourceChar: 1721
-      endSourceChar: 1749
-      line: 69
+    - startInstruction: 2440
+      endInstruction: 2471
+      startSourceChar: 1748
+      endSourceChar: 1776
+      line: 71
       lineChar: 21
       spanCodeSection: "PlayShotSE();\r\n    }\r\n\r\n    "
-    - startInstruction: 2488
-      endInstruction: 2507
-      startSourceChar: 1749
-      endSourceChar: 1775
-      line: 72
+    - startInstruction: 2472
+      endInstruction: 2491
+      startSourceChar: 1776
+      endSourceChar: 1802
+      line: 74
       lineChar: 4
       spanCodeSection: "public void Reload()\r\n    "
-    - startInstruction: 2508
-      endInstruction: 2507
-      startSourceChar: 1775
-      endSourceChar: 1786
-      line: 73
+    - startInstruction: 2492
+      endInstruction: 2491
+      startSourceChar: 1802
+      endSourceChar: 1813
+      line: 75
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2508
-      endInstruction: 2507
-      startSourceChar: 1786
-      endSourceChar: 1786
-      line: 74
+    - startInstruction: 2492
+      endInstruction: 2491
+      startSourceChar: 1813
+      endSourceChar: 1813
+      line: 76
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2508
-      endInstruction: 2507
-      startSourceChar: 1786
-      endSourceChar: 1798
-      line: 74
+    - startInstruction: 2492
+      endInstruction: 2491
+      startSourceChar: 1813
+      endSourceChar: 1825
+      line: 76
       lineChar: 8
       spanCodeSection: 'bulletNum = '
-    - startInstruction: 2508
-      endInstruction: 2527
-      startSourceChar: 1798
-      endSourceChar: 1821
-      line: 74
+    - startInstruction: 2492
+      endInstruction: 2511
+      startSourceChar: 1825
+      endSourceChar: 1848
+      line: 76
       lineChar: 20
       spanCodeSection: "bulletNumMax;\r\n        "
-    - startInstruction: 2528
-      endInstruction: 2527
-      startSourceChar: 1821
-      endSourceChar: 1821
-      line: 75
+    - startInstruction: 2512
+      endInstruction: 2511
+      startSourceChar: 1848
+      endSourceChar: 1848
+      line: 77
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2528
-      endInstruction: 2527
-      startSourceChar: 1821
-      endSourceChar: 1821
-      line: 75
+    - startInstruction: 2512
+      endInstruction: 2511
+      startSourceChar: 1848
+      endSourceChar: 1848
+      line: 77
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2528
-      endInstruction: 2603
-      startSourceChar: 1821
-      endSourceChar: 1847
-      line: 75
+    - startInstruction: 2512
+      endInstruction: 2587
+      startSourceChar: 1848
+      endSourceChar: 1874
+      line: 77
       lineChar: 8
       spanCodeSection: "ReloadSE();\r\n    }\r\n\r\n    "
-    - startInstruction: 2604
-      endInstruction: 2623
-      startSourceChar: 1847
-      endSourceChar: 1875
-      line: 78
+    - startInstruction: 2588
+      endInstruction: 2607
+      startSourceChar: 1874
+      endSourceChar: 1902
+      line: 80
       lineChar: 4
       spanCodeSection: "public void ReloadSE()\r\n    "
-    - startInstruction: 2624
-      endInstruction: 2623
-      startSourceChar: 1875
-      endSourceChar: 1886
-      line: 79
+    - startInstruction: 2608
+      endInstruction: 2607
+      startSourceChar: 1902
+      endSourceChar: 1913
+      line: 81
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2624
-      endInstruction: 2623
-      startSourceChar: 1886
-      endSourceChar: 1886
-      line: 80
+    - startInstruction: 2608
+      endInstruction: 2607
+      startSourceChar: 1913
+      endSourceChar: 1913
+      line: 82
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2624
-      endInstruction: 2623
-      startSourceChar: 1886
-      endSourceChar: 1886
-      line: 80
+    - startInstruction: 2608
+      endInstruction: 2607
+      startSourceChar: 1913
+      endSourceChar: 1913
+      line: 82
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2624
-      endInstruction: 2623
-      startSourceChar: 1886
-      endSourceChar: 1886
-      line: 80
+    - startInstruction: 2608
+      endInstruction: 2607
+      startSourceChar: 1913
+      endSourceChar: 1913
+      line: 82
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2624
-      endInstruction: 2623
-      startSourceChar: 1886
-      endSourceChar: 1899
-      line: 80
+    - startInstruction: 2608
+      endInstruction: 2607
+      startSourceChar: 1913
+      endSourceChar: 1926
+      line: 82
       lineChar: 8
       spanCodeSection: audioManager.
-    - startInstruction: 2624
-      endInstruction: 2655
-      startSourceChar: 1899
-      endSourceChar: 1929
-      line: 80
+    - startInstruction: 2608
+      endInstruction: 2639
+      startSourceChar: 1926
+      endSourceChar: 1956
+      line: 82
       lineChar: 21
       spanCodeSection: "PlayReloadSE();\r\n    }\r\n\r\n    "
-    - startInstruction: 2656
-      endInstruction: 2675
-      startSourceChar: 1929
-      endSourceChar: 1966
-      line: 83
+    - startInstruction: 2640
+      endInstruction: 2659
+      startSourceChar: 1956
+      endSourceChar: 1993
+      line: 85
       lineChar: 4
       spanCodeSection: "public override void OnPickup()\r\n    "
-    - startInstruction: 2676
-      endInstruction: 2675
-      startSourceChar: 1966
-      endSourceChar: 1977
-      line: 84
+    - startInstruction: 2660
+      endInstruction: 2659
+      startSourceChar: 1993
+      endSourceChar: 2004
+      line: 86
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2676
-      endInstruction: 2675
-      startSourceChar: 1977
-      endSourceChar: 1977
-      line: 85
+    - startInstruction: 2660
+      endInstruction: 2659
+      startSourceChar: 2004
+      endSourceChar: 2004
+      line: 87
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2676
-      endInstruction: 2675
-      startSourceChar: 1977
-      endSourceChar: 1998
-      line: 85
+    - startInstruction: 2660
+      endInstruction: 2659
+      startSourceChar: 2004
+      endSourceChar: 2025
+      line: 87
       lineChar: 8
       spanCodeSection: delayTimer.StopTimer(
-    - startInstruction: 2676
-      endInstruction: 2739
-      startSourceChar: 1998
-      endSourceChar: 2016
-      line: 85
+    - startInstruction: 2660
+      endInstruction: 2715
+      startSourceChar: 2025
+      endSourceChar: 2038
+      line: 87
       lineChar: 29
-      spanCodeSection: "0);\r\n    }\r\n\r\n    "
-    - startInstruction: 2740
-      endInstruction: 2759
-      startSourceChar: 2016
-      endSourceChar: 2051
+      spanCodeSection: "0);\r\n        "
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 2038
+      endSourceChar: 2038
       line: 88
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 2038
+      endSourceChar: 2079
+      line: 88
+      lineChar: 8
+      spanCodeSection: gameManager.GetNameManager().SetNameSync(
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 2079
+      endSourceChar: 2079
+      line: 88
+      lineChar: 49
+      spanCodeSection: 
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 2079
+      endSourceChar: 2090
+      line: 88
+      lineChar: 49
+      spanCodeSection: Networking.
+    - startInstruction: 2716
+      endInstruction: 2731
+      startSourceChar: 2090
+      endSourceChar: 2103
+      line: 88
+      lineChar: 60
+      spanCodeSection: 'LocalPlayer, '
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2103
+      endSourceChar: 2113
+      line: 88
+      lineChar: 73
+      spanCodeSection: 'playerID, '
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2113
+      endSourceChar: 2113
+      line: 88
+      lineChar: 83
+      spanCodeSection: 
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2113
+      endSourceChar: 2113
+      line: 88
+      lineChar: 83
+      spanCodeSection: 
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2113
+      endSourceChar: 2124
+      line: 88
+      lineChar: 83
+      spanCodeSection: Networking.
+    - startInstruction: 2732
+      endInstruction: 2731
+      startSourceChar: 2124
+      endSourceChar: 2136
+      line: 88
+      lineChar: 94
+      spanCodeSection: LocalPlayer.
+    - startInstruction: 2732
+      endInstruction: 2975
+      startSourceChar: 2136
+      endSourceChar: 2164
+      line: 88
+      lineChar: 106
+      spanCodeSection: "displayName);\r\n    }\r\n\r\n    "
+    - startInstruction: 2976
+      endInstruction: 2995
+      startSourceChar: 2164
+      endSourceChar: 2199
+      line: 91
       lineChar: 4
       spanCodeSection: "public override void OnDrop()\r\n    "
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2051
-      endSourceChar: 2062
-      line: 89
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2199
+      endSourceChar: 2210
+      line: 92
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2062
-      endSourceChar: 2062
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2210
+      endSourceChar: 2210
+      line: 93
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2062
-      endSourceChar: 2084
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2210
+      endSourceChar: 2232
+      line: 93
       lineChar: 8
       spanCodeSection: delayTimer.StartTimer(
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2084
-      endSourceChar: 2087
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2232
+      endSourceChar: 2235
+      line: 93
       lineChar: 30
       spanCodeSection: '1, '
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2087
-      endSourceChar: 2093
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2235
+      endSourceChar: 2241
+      line: 93
       lineChar: 33
       spanCodeSection: 'this, '
-    - startInstruction: 2760
-      endInstruction: 2759
-      startSourceChar: 2093
-      endSourceChar: 2110
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 2995
+      startSourceChar: 2241
+      endSourceChar: 2258
+      line: 93
       lineChar: 39
       spanCodeSection: '"ResetPosition", '
-    - startInstruction: 2760
-      endInstruction: 2943
-      startSourceChar: 2110
-      endSourceChar: 2128
-      line: 90
+    - startInstruction: 2996
+      endInstruction: 3179
+      startSourceChar: 2258
+      endSourceChar: 2276
+      line: 93
       lineChar: 56
       spanCodeSection: "3);\r\n    }\r\n\r\n    "
-    - startInstruction: 2944
-      endInstruction: 2963
-      startSourceChar: 2128
-      endSourceChar: 2161
-      line: 93
+    - startInstruction: 3180
+      endInstruction: 3199
+      startSourceChar: 2276
+      endSourceChar: 2309
+      line: 96
       lineChar: 4
       spanCodeSection: "public void ResetPosition()\r\n    "
-    - startInstruction: 2964
-      endInstruction: 2963
-      startSourceChar: 2161
-      endSourceChar: 2172
-      line: 94
+    - startInstruction: 3200
+      endInstruction: 3199
+      startSourceChar: 2309
+      endSourceChar: 2320
+      line: 97
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2964
-      endInstruction: 2963
-      startSourceChar: 2172
-      endSourceChar: 2172
-      line: 95
+    - startInstruction: 3200
+      endInstruction: 3199
+      startSourceChar: 2320
+      endSourceChar: 2320
+      line: 98
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2964
-      endInstruction: 2963
-      startSourceChar: 2172
-      endSourceChar: 2172
-      line: 95
+    - startInstruction: 3200
+      endInstruction: 3199
+      startSourceChar: 2320
+      endSourceChar: 2320
+      line: 98
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2964
-      endInstruction: 2963
-      startSourceChar: 2172
-      endSourceChar: 2172
-      line: 95
+    - startInstruction: 3200
+      endInstruction: 3199
+      startSourceChar: 2320
+      endSourceChar: 2320
+      line: 98
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2964
-      endInstruction: 2963
-      startSourceChar: 2172
-      endSourceChar: 2186
-      line: 95
+    - startInstruction: 3200
+      endInstruction: 3199
+      startSourceChar: 2320
+      endSourceChar: 2334
+      line: 98
       lineChar: 8
       spanCodeSection: resetPosition.
-    - startInstruction: 2964
-      endInstruction: 2995
-      startSourceChar: 2186
-      endSourceChar: 2226
-      line: 95
+    - startInstruction: 3200
+      endInstruction: 3231
+      startSourceChar: 2334
+      endSourceChar: 2374
+      line: 98
       lineChar: 22
       spanCodeSection: "Execute();\r\n    }\r\n\r\n    // getter\r\n    "
-    - startInstruction: 2996
-      endInstruction: 3015
-      startSourceChar: 2226
-      endSourceChar: 2255
-      line: 99
+    - startInstruction: 3232
+      endInstruction: 3251
+      startSourceChar: 2374
+      endSourceChar: 2403
+      line: 102
       lineChar: 4
       spanCodeSection: 'public int GetPlayerID()     '
-    - startInstruction: 3016
-      endInstruction: 3015
-      startSourceChar: 2255
-      endSourceChar: 2257
-      line: 99
+    - startInstruction: 3252
+      endInstruction: 3251
+      startSourceChar: 2403
+      endSourceChar: 2405
+      line: 102
       lineChar: 33
       spanCodeSection: '{ '
-    - startInstruction: 3016
-      endInstruction: 3015
-      startSourceChar: 2257
-      endSourceChar: 2264
-      line: 99
+    - startInstruction: 3252
+      endInstruction: 3251
+      startSourceChar: 2405
+      endSourceChar: 2412
+      line: 102
       lineChar: 35
       spanCodeSection: 'return '
-    - startInstruction: 3016
-      endInstruction: 3051
-      startSourceChar: 2264
-      endSourceChar: 2281
-      line: 99
+    - startInstruction: 3252
+      endInstruction: 3287
+      startSourceChar: 2412
+      endSourceChar: 2429
+      line: 102
       lineChar: 42
       spanCodeSection: "playerID; }\r\n    "
-    - startInstruction: 3052
-      endInstruction: 3071
-      startSourceChar: 2281
-      endSourceChar: 2310
-      line: 100
+    - startInstruction: 3288
+      endInstruction: 3307
+      startSourceChar: 2429
+      endSourceChar: 2458
+      line: 103
       lineChar: 4
       spanCodeSection: 'public int GetATK()          '
-    - startInstruction: 3072
-      endInstruction: 3071
-      startSourceChar: 2310
-      endSourceChar: 2312
-      line: 100
+    - startInstruction: 3308
+      endInstruction: 3307
+      startSourceChar: 2458
+      endSourceChar: 2460
+      line: 103
       lineChar: 33
       spanCodeSection: '{ '
-    - startInstruction: 3072
-      endInstruction: 3071
-      startSourceChar: 2312
-      endSourceChar: 2319
-      line: 100
+    - startInstruction: 3308
+      endInstruction: 3307
+      startSourceChar: 2460
+      endSourceChar: 2467
+      line: 103
       lineChar: 35
       spanCodeSection: 'return '
-    - startInstruction: 3072
-      endInstruction: 3107
-      startSourceChar: 2319
-      endSourceChar: 2331
-      line: 100
+    - startInstruction: 3308
+      endInstruction: 3343
+      startSourceChar: 2467
+      endSourceChar: 2479
+      line: 103
       lineChar: 42
       spanCodeSection: "ATK; }\r\n    "
-    - startInstruction: 3108
-      endInstruction: 3127
-      startSourceChar: 2331
-      endSourceChar: 2360
-      line: 101
+    - startInstruction: 3344
+      endInstruction: 3363
+      startSourceChar: 2479
+      endSourceChar: 2508
+      line: 104
       lineChar: 4
       spanCodeSection: 'public int GetBulletNum()    '
-    - startInstruction: 3128
-      endInstruction: 3127
-      startSourceChar: 2360
-      endSourceChar: 2362
-      line: 101
+    - startInstruction: 3364
+      endInstruction: 3363
+      startSourceChar: 2508
+      endSourceChar: 2510
+      line: 104
       lineChar: 33
       spanCodeSection: '{ '
-    - startInstruction: 3128
-      endInstruction: 3127
-      startSourceChar: 2362
-      endSourceChar: 2369
-      line: 101
+    - startInstruction: 3364
+      endInstruction: 3363
+      startSourceChar: 2510
+      endSourceChar: 2517
+      line: 104
       lineChar: 35
       spanCodeSection: 'return '
-    - startInstruction: 3128
-      endInstruction: 3163
-      startSourceChar: 2369
-      endSourceChar: 2387
-      line: 101
+    - startInstruction: 3364
+      endInstruction: 3399
+      startSourceChar: 2517
+      endSourceChar: 2535
+      line: 104
       lineChar: 42
       spanCodeSection: "bulletNum; }\r\n    "
-    - startInstruction: 3164
-      endInstruction: 3183
-      startSourceChar: 2387
-      endSourceChar: 2416
-      line: 102
+    - startInstruction: 3400
+      endInstruction: 3419
+      startSourceChar: 2535
+      endSourceChar: 2564
+      line: 105
       lineChar: 4
       spanCodeSection: 'public int GetBulletNumMax() '
-    - startInstruction: 3184
-      endInstruction: 3183
-      startSourceChar: 2416
-      endSourceChar: 2418
-      line: 102
+    - startInstruction: 3420
+      endInstruction: 3419
+      startSourceChar: 2564
+      endSourceChar: 2566
+      line: 105
       lineChar: 33
       spanCodeSection: '{ '
-    - startInstruction: 3184
-      endInstruction: 3183
-      startSourceChar: 2418
-      endSourceChar: 2425
-      line: 102
+    - startInstruction: 3420
+      endInstruction: 3419
+      startSourceChar: 2566
+      endSourceChar: 2573
+      line: 105
       lineChar: 35
       spanCodeSection: 'return '
-    - startInstruction: 3184
-      endInstruction: 3219
-      startSourceChar: 2425
-      endSourceChar: 2446
-      line: 102
+    - startInstruction: 3420
+      endInstruction: 3420
+      startSourceChar: 2573
+      endSourceChar: 2573
+      line: 105
       lineChar: 42
-      spanCodeSection: "bulletNumMax; }\r\n    "
-    - startInstruction: 3220
-      endInstruction: 3239
-      startSourceChar: 2446
-      endSourceChar: 2478
-      line: 103
-      lineChar: 4
-      spanCodeSection: 'public ScoreData GetScoreData() '
-    - startInstruction: 3240
-      endInstruction: 3239
-      startSourceChar: 2478
-      endSourceChar: 2480
-      line: 103
-      lineChar: 36
-      spanCodeSection: '{ '
-    - startInstruction: 3240
-      endInstruction: 3239
-      startSourceChar: 2480
-      endSourceChar: 2487
-      line: 103
-      lineChar: 38
-      spanCodeSection: 'return '
-    - startInstruction: 3240
-      endInstruction: 3239
-      startSourceChar: 2487
-      endSourceChar: 2525
-      line: 103
-      lineChar: 45
-      spanCodeSection: gameManager.GetScoreManager().GetData(
-    - startInstruction: 3240
-      endInstruction: 3240
-      startSourceChar: 2525
-      endSourceChar: 2525
-      line: 103
-      lineChar: 83
       spanCodeSection: 
   hasInteractEvent: 0
   serializationData:
@@ -1881,8 +1757,8 @@ MonoBehaviour:
     - {fileID: 11500000, guid: d29c7706bd7531649a76f1236a2dc445, type: 3}
     - {fileID: 11500000, guid: 15b647128e6009f4bac05ac71cb7df7f, type: 3}
     - {fileID: 11500000, guid: 36354ceeb16d1e349bd7350c40c00e30, type: 3}
-    - {fileID: 11500000, guid: efa403b78ed19c34bb4beafb4d0433ad, type: 3}
     - {fileID: 11500000, guid: 90c1949176b804244beeb3e601762285, type: 3}
+    - {fileID: 11500000, guid: efa403b78ed19c34bb4beafb4d0433ad, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -2336,7 +2212,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: gameManager
+      Data: audioManager
     - Name: $v
       Entry: 7
       Data: 28|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -2348,7 +2224,7 @@ MonoBehaviour:
       Data: 30|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: GameManager, Assembly-CSharp
+      Data: AudioManager, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -2363,10 +2239,10 @@ MonoBehaviour:
       Data: VRCUdonUdonBehaviour
     - Name: symbolOriginalName
       Entry: 1
-      Data: gameManager
+      Data: audioManager
     - Name: symbolUniqueName
       Entry: 1
-      Data: gameManager
+      Data: audioManager
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
@@ -2399,7 +2275,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: audioManager
+      Data: gameManager
     - Name: $v
       Entry: 7
       Data: 32|UdonSharp.FieldDefinition, UdonSharp.Editor
@@ -2411,7 +2287,7 @@ MonoBehaviour:
       Data: 34|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: AudioManager, Assembly-CSharp
+      Data: GameManager, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -2426,10 +2302,10 @@ MonoBehaviour:
       Data: VRCUdonUdonBehaviour
     - Name: symbolOriginalName
       Entry: 1
-      Data: audioManager
+      Data: gameManager
     - Name: symbolUniqueName
       Entry: 1
-      Data: audioManager
+      Data: gameManager
     - Name: symbolDefaultValue
       Entry: 6
       Data: 
