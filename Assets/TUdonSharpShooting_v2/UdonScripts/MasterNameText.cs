@@ -12,11 +12,11 @@ public class MasterNameText : UdonSharpBehaviour
     void Start()
     {
         text = GetComponent<Text>();
-        text.text = "Now Master : " + Networking.GetOwner(gameObject).displayName;
+        text.text = Networking.GetOwner(gameObject).displayName;
     }
 
     public override void OnPlayerLeft(VRCPlayerApi player)
     {
-        text.text = "Now Master : " + Networking.GetOwner(gameObject).displayName;
+        text.text = Networking.GetOwner(gameObject).displayName;
     }
 }

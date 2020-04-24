@@ -36,15 +36,17 @@ public class NameManager : UdonSharpBehaviour
         }
     }
 
-    public void SetNameSync(VRCPlayerApi player, int playerID, string name)
+    public void SetNameLateSync(VRCPlayerApi player, int playerID, string name)
     {
+        if (CheckOutOfRange(playerID)) return;
+
         if (!Networking.IsOwner(player, nameData[playerID].gameObject))
         {
             Networking.SetOwner(player, nameData[playerID].gameObject);
             tPlayer = player;
             tID = playerID;
             tName = name;
-            delayTimer.StartTimer(0, this, "SetName", 0.5f);
+            delayTimer.StartTimer(0, this, "SetNameLateSync", 0.5f);
         }
         else
         {
@@ -55,14 +57,21 @@ public class NameManager : UdonSharpBehaviour
         }
     }
 
+    bool CheckOutOfRange(int index)
+    {
+        return index < 0 || nameData.Length <= index;
+    }
+
     public string GetData(int playerID)
     {
         if (nameData == null) return "";
+        if (CheckOutOfRange(playerID)) return "";
         return nameData[playerID].GetValue();
     }
 
     public void SetDataOwnership(VRCPlayerApi player, int playerID)
     {
+        if (CheckOutOfRange(playerID)) return;
         Networking.SetOwner(player, nameData[playerID].gameObject);
     }
 }

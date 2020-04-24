@@ -27,24 +27,34 @@ public class ScoreManager : UdonSharpBehaviour
         }
     }
 
+    bool CheckOutOfRange(int index)
+    {
+        return index < 0 || scoreData.Length <= index;
+    }
+
     public void SetValue(int playerID, int score)
     {
+        if (CheckOutOfRange(playerID)) return;
         scoreData[playerID].SetValue(score);
     }
 
     public void AddValue(int playerID, int score)
     {
+        if (CheckOutOfRange(playerID)) return;
         scoreData[playerID].AddValue(score);
     }
 
     public int GetData(int playerID)
     {
         if (scoreData == null) return 0;
+        if (CheckOutOfRange(playerID)) return 0;
+
         return scoreData[playerID].GetValue();
     }
 
     public void SetDataOwnership(VRCPlayerApi player, int playerID)
     {
+        if (CheckOutOfRange(playerID)) return;
         Networking.SetOwner(player, scoreData[playerID].gameObject);
     }
 }

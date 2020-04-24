@@ -20,50 +20,60 @@ MonoBehaviour:
     %SystemString, null\r\n    delayTimer: %VRCUdonUdonBehaviour, null\r\n    tPlayer:
     %VRCSDKBaseVRCPlayerApi, null\r\n    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform,
     this\r\n    __0_this_intnl_NameManager: %VRCUdonUdonBehaviour, this\r\n    __0_i_Int32:
-    %SystemInt32, null\r\n    __0_playerID_Int32: %SystemInt32, null\r\n    __1_i_Int32:
-    %SystemInt32, null\r\n    __1_playerID_Int32: %SystemInt32, null\r\n    __2_playerID_Int32:
-    %SystemInt32, null\r\n    __0_name_String: %SystemString, null\r\n    __0_player_VRCPlayerApi:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __1_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __0_const_intnl_UnityEngineComponentArray: %UnityEngineComponentArray,
-    null\r\n    __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __0_const_intnl_SystemInt64: %SystemInt64, null\r\n
-    \   __1_const_intnl_SystemInt64: %SystemInt64, null\r\n    __2_const_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __0_const_intnl_SystemObject: %SystemObject, null\r\n
-    \   __0_const_intnl_SystemSingle: %SystemSingle, null\r\n    __0_const_intnl_SystemString:
-    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
-    \   __10_const_intnl_SystemString: %SystemString, null\r\n    __11_const_intnl_SystemString:
-    %SystemString, null\r\n    __12_const_intnl_SystemString: %SystemString, null\r\n
-    \   __13_const_intnl_SystemString: %SystemString, null\r\n    __14_const_intnl_SystemString:
-    %SystemString, null\r\n    __2_const_intnl_SystemString: %SystemString, null\r\n
-    \   __3_const_intnl_SystemString: %SystemString, null\r\n    __4_const_intnl_SystemString:
-    %SystemString, null\r\n    __5_const_intnl_SystemString: %SystemString, null\r\n
-    \   __6_const_intnl_SystemString: %SystemString, null\r\n    __7_const_intnl_SystemString:
-    %SystemString, null\r\n    __8_const_intnl_SystemString: %SystemString, null\r\n
-    \   __9_const_intnl_SystemString: %SystemString, null\r\n    __0_const_intnl_SystemType:
-    %SystemType, null\r\n    __0_const_intnl_DelayTimer: %VRCUdonUdonBehaviour, null\r\n
-    \   __0_const_intnl_NameData: %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_exitJumpLoc_UInt32:
-    %SystemUInt32, null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n
-    \   __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemInt32, null\r\n    __0_index_Int32: %SystemInt32, null\r\n    __0_playerID_Int32:
+    %SystemInt32, null\r\n    __1_i_Int32: %SystemInt32, null\r\n    __1_playerID_Int32:
+    %SystemInt32, null\r\n    __2_playerID_Int32: %SystemInt32, null\r\n    __0_name_String:
+    %SystemString, null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
+    \   __1_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_UnityEngineComponentArray:
+    %UnityEngineComponentArray, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __1_const_intnl_SystemInt64: %SystemInt64, null\r\n
+    \   __2_const_intnl_SystemInt64: %SystemInt64, null\r\n    __0_const_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_const_intnl_SystemSingle: %SystemSingle, null\r\n
+    \   __0_const_intnl_SystemString: %SystemString, null\r\n    __1_const_intnl_SystemString:
+    %SystemString, null\r\n    __10_const_intnl_SystemString: %SystemString, null\r\n
+    \   __11_const_intnl_SystemString: %SystemString, null\r\n    __12_const_intnl_SystemString:
+    %SystemString, null\r\n    __13_const_intnl_SystemString: %SystemString, null\r\n
+    \   __14_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
+    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
+    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
+    \   __7_const_intnl_SystemString: %SystemString, null\r\n    __8_const_intnl_SystemString:
+    %SystemString, null\r\n    __9_const_intnl_SystemString: %SystemString, null\r\n
+    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_DelayTimer:
+    %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_NameData: %VRCUdonUdonBehaviour,
+    null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __0_const_intnl_SystemUInt32:
+    %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __3_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_returnValSymbol_Boolean: %SystemBoolean,
+    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __10_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __11_intnl_SystemBoolean: %SystemBoolean, null\r\n    __12_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __13_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __14_intnl_SystemBoolean: %SystemBoolean, null\r\n    __15_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __2_intnl_SystemBoolean: %SystemBoolean, null\r\n
     \   __3_intnl_SystemBoolean: %SystemBoolean, null\r\n    __4_intnl_SystemBoolean:
     %SystemBoolean, null\r\n    __5_intnl_SystemBoolean: %SystemBoolean, null\r\n
     \   __6_intnl_SystemBoolean: %SystemBoolean, null\r\n    __7_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent: %UnityEngineComponent,
-    null\r\n    __0_intnl_NameDataArray: %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineComponentArray:
-    %UnityEngineComponentArray, null\r\n    __1_intnl_NameDataArray: %UnityEngineComponentArray,
-    null\r\n    __1_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
-    \   __2_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
-    \   __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n    __1_intnl_UnityEngineGameObject:
-    %UnityEngineGameObject, null\r\n    __2_intnl_UnityEngineGameObject: %UnityEngineGameObject,
-    null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n    __1_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __10_intnl_SystemInt32: %SystemInt32, null\r\n    __2_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __3_intnl_SystemInt32: %SystemInt32, null\r\n    __4_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __5_intnl_SystemInt32: %SystemInt32, null\r\n    __6_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __7_intnl_SystemInt32: %SystemInt32, null\r\n    __8_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __9_intnl_SystemInt32: %SystemInt32, null\r\n    __0_intnl_SystemInt64:
-    %SystemInt64, null\r\n    __1_intnl_SystemInt64: %SystemInt64, null\r\n    __0_intnl_SystemObject:
-    %SystemObject, null\r\n    __1_intnl_SystemObject: %SystemObject, null\r\n    __0_intnl_returnValSymbol_String:
-    %SystemString, null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __1_intnl_SystemString:
+    %SystemBoolean, null\r\n    __8_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __9_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent:
+    %UnityEngineComponent, null\r\n    __0_intnl_NameDataArray: %UnityEngineComponentArray,
+    null\r\n    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
+    \   __1_intnl_NameDataArray: %UnityEngineComponentArray, null\r\n    __1_intnl_UnityEngineComponentArray:
+    %UnityEngineComponentArray, null\r\n    __2_intnl_UnityEngineComponentArray: %UnityEngineComponentArray,
+    null\r\n    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n
+    \   __1_intnl_UnityEngineGameObject: %UnityEngineGameObject, null\r\n    __2_intnl_UnityEngineGameObject:
+    %UnityEngineGameObject, null\r\n    __0_intnl_SystemInt32: %SystemInt32, null\r\n
+    \   __1_intnl_SystemInt32: %SystemInt32, null\r\n    __10_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __11_intnl_SystemInt32: %SystemInt32, null\r\n    __12_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __3_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __4_intnl_SystemInt32: %SystemInt32, null\r\n    __5_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __6_intnl_SystemInt32: %SystemInt32, null\r\n    __7_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __8_intnl_SystemInt32: %SystemInt32, null\r\n    __9_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __0_intnl_SystemInt64: %SystemInt64, null\r\n    __1_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __0_intnl_SystemObject: %SystemObject, null\r\n    __1_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_intnl_returnValSymbol_String: %SystemString, null\r\n
+    \   __0_intnl_SystemString: %SystemString, null\r\n    __1_intnl_SystemString:
     %SystemString, null\r\n    __2_intnl_SystemString: %SystemString, null\r\n    __3_intnl_SystemString:
     %SystemString, null\r\n    __0_intnl_UnityEngineTransform: %UnityEngineTransform,
     null\r\n    __0_intnl_DelayTimer: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_NameData:
@@ -73,6 +83,8 @@ MonoBehaviour:
     null\r\n    __4_intnl_NameData: %VRCUdonUdonBehaviour, null\r\n    __5_intnl_NameData:
     %VRCUdonUdonBehaviour, null\r\n    __6_intnl_NameData: %VRCUdonUdonBehaviour,
     null\r\n    __0_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32:
+    %SystemUInt32, null\r\n    __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n
+    \   __2_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __3_intnl_oldReturnLoc_UInt32:
     %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using UdonSharp;\r\n
     \       \r\n         # using UnityEngine;\r\n        \r\n         # using VRC.SDKBase;\r\n
     \       \r\n         # using VRC.Udon;\r\n        \r\n         # public class
@@ -210,19 +222,28 @@ MonoBehaviour:
     __9_intnl_SystemInt32\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       PUSH, __9_intnl_SystemInt32\r\n        PUSH, __1_i_Int32\r\n        COPY\r\n
     \       JUMP, 0x00000604\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # public void SetNameSync(VRCPlayerApi player,
-    int playerID, string name)\r\n    .export SetNameSync\r\n        \r\n    SetNameSync:\r\n
+    \       \r\n        \r\n         # public void SetNameLateSync(VRCPlayerApi player,
+    int playerID, string name)\r\n    .export SetNameLateSync\r\n        \r\n    SetNameLateSync:\r\n
     \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (!Networking.IsOwner(player,
-    nameData[playerID].gameObject))\r\n        PUSH, nameData\r\n        PUSH, __0_playerID_Int32\r\n
-    \       PUSH, __3_intnl_NameData\r\n        EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (CheckOutOfRange(playerID))
+    return;\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __0_index_Int32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __1_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000A9C\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __5_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000828\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # if (!Networking.IsOwner(player, nameData[playerID].gameObject))\r\n
+    \       PUSH, nameData\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __3_intnl_NameData\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
     \       PUSH, __3_intnl_NameData\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
     \       EXTERN, \"UnityEngineComponent.__get_gameObject__UnityEngineGameObject\"\r\n
     \       PUSH, __0_player_VRCPlayerApi\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
-    \       PUSH, __5_intnl_SystemBoolean\r\n        EXTERN, \"VRCSDKBaseNetworking.__IsOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemBoolean\"\r\n
-    \       PUSH, __5_intnl_SystemBoolean\r\n        PUSH, __6_intnl_SystemBoolean\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        EXTERN, \"VRCSDKBaseNetworking.__IsOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemBoolean\"\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        PUSH, __7_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
-    \       PUSH, __6_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000950\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000009D4\r\n
     \       \r\n         # {\r\n        \r\n         # Networking.SetOwner(player,
     nameData[playerID].gameObject);\r\n        PUSH, nameData\r\n        PUSH, __0_playerID_Int32\r\n
     \       PUSH, __4_intnl_NameData\r\n        EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
@@ -234,7 +255,7 @@ MonoBehaviour:
     \       PUSH, tPlayer\r\n        COPY\r\n        \r\n         # tID = playerID;\r\n
     \       PUSH, __0_playerID_Int32\r\n        PUSH, tID\r\n        COPY\r\n        \r\n
     \        # tName = name;\r\n        PUSH, __0_name_String\r\n        PUSH, tName\r\n
-    \       COPY\r\n        \r\n         # delayTimer.StartTimer(0, this, \"SetName\",
+    \       COPY\r\n        \r\n         # delayTimer.StartTimer(0, this, \"SetNameLateSync\",
     0.5f);\r\n        PUSH, delayTimer\r\n        PUSH, __7_const_intnl_SystemString\r\n
     \       PUSH, __0_const_intnl_SystemInt32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __8_const_intnl_SystemString\r\n        PUSH,
@@ -245,7 +266,7 @@ MonoBehaviour:
     __0_const_intnl_SystemSingle\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, delayTimer\r\n        PUSH, __11_const_intnl_SystemString\r\n        EXTERN,
     \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
-    \       JUMP, 0x000009FC\r\n        \r\n         # else\r\n        \r\n         #
+    \       JUMP, 0x00000A80\r\n        \r\n         # else\r\n        \r\n         #
     {\r\n        \r\n         # nameData[playerID].SetValue(name);\r\n        PUSH,
     nameData\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __4_intnl_NameData\r\n
     \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
@@ -260,21 +281,50 @@ MonoBehaviour:
     \       PUSH, __10_intnl_SystemInt32\r\n        PUSH, tID\r\n        COPY\r\n
     \       \r\n         # tName = \"\";\r\n        PUSH, __12_const_intnl_SystemString\r\n
     \       PUSH, tName\r\n        COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # public string GetData(int playerID)\r\n    .export
-    GetData\r\n        \r\n    GetData:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
-    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # if (nameData == null) return \"\";\r\n        PUSH,
-    nameData\r\n        PUSH, __1_intnl_NameDataArray\r\n        COPY\r\n        PUSH,
-    __1_intnl_NameDataArray\r\n        PUSH, __0_const_intnl_UnityEngineComponentArray\r\n
-    \       PUSH, __7_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000A78\r\n
+    \       \r\n        \r\n         # bool CheckOutOfRange(int index)\r\n    CheckOutOfRange:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # return index
+    < 0 || nameData.Length <= index;\r\n        PUSH, __0_index_Int32\r\n        PUSH,
+    __11_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __11_intnl_SystemInt32\r\n
+    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __9_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __9_intnl_SystemBoolean\r\n        PUSH, __8_intnl_SystemBoolean\r\n
+    \       COPY\r\n        PUSH, __8_intnl_SystemBoolean\r\n        PUSH, __10_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __10_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000B78\r\n
+    \       PUSH, nameData\r\n        PUSH, __12_intnl_SystemInt32\r\n        EXTERN,
+    \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n        PUSH, __12_intnl_SystemInt32\r\n
+    \       PUSH, __0_index_Int32\r\n        PUSH, __11_intnl_SystemBoolean\r\n        EXTERN,
+    \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __8_intnl_SystemBoolean\r\n        PUSH, __11_intnl_SystemBoolean\r\n
+    \       PUSH, __12_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __12_intnl_SystemBoolean\r\n        PUSH, __8_intnl_SystemBoolean\r\n
+    \       COPY\r\n        PUSH, __8_intnl_SystemBoolean\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public string
+    GetData(int playerID)\r\n    .export GetData\r\n        \r\n    GetData:\r\n        \r\n
+    \       PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (nameData
+    == null) return \"\";\r\n        PUSH, nameData\r\n        PUSH, __1_intnl_NameDataArray\r\n
+    \       COPY\r\n        PUSH, __1_intnl_NameDataArray\r\n        PUSH, __0_const_intnl_UnityEngineComponentArray\r\n
+    \       PUSH, __13_intnl_SystemBoolean\r\n        EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __13_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000C10\r\n
     \       PUSH, __12_const_intnl_SystemString\r\n        PUSH, __0_intnl_returnValSymbol_String\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
-    \        # return nameData[playerID].GetValue();\r\n        PUSH, nameData\r\n
-    \       PUSH, __1_playerID_Int32\r\n        PUSH, __5_intnl_NameData\r\n        EXTERN,
-    \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n        PUSH,
-    __5_intnl_NameData\r\n        PUSH, __13_const_intnl_SystemString\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \        # if (CheckOutOfRange(playerID)) return \"\";\r\n        PUSH, __1_playerID_Int32\r\n
+    \       PUSH, __0_index_Int32\r\n        COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __2_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000A9C\r\n
+    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __14_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __14_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000CA8\r\n        PUSH, __12_const_intnl_SystemString\r\n
+    \       PUSH, __0_intnl_returnValSymbol_String\r\n        COPY\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n         # return nameData[playerID].GetValue();\r\n
+    \       PUSH, nameData\r\n        PUSH, __1_playerID_Int32\r\n        PUSH, __5_intnl_NameData\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __5_intnl_NameData\r\n        PUSH, __13_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       PUSH, __5_intnl_NameData\r\n        PUSH, __14_const_intnl_SystemString\r\n
     \       PUSH, __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
     \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemString\r\n
@@ -285,7 +335,16 @@ MonoBehaviour:
     SetDataOwnership(VRCPlayerApi player, int playerID)\r\n    .export SetDataOwnership\r\n
     \       \r\n    SetDataOwnership:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # Networking.SetOwner(player, nameData[playerID].gameObject);\r\n
+    {\r\n        \r\n         # if (CheckOutOfRange(playerID)) return;\r\n        PUSH,
+    __2_playerID_Int32\r\n        PUSH, __0_index_Int32\r\n        COPY\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        PUSH, __3_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __3_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x00000A9C\r\n
+    \       PUSH, __3_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __15_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __15_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000DD4\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # Networking.SetOwner(player, nameData[playerID].gameObject);\r\n
     \       PUSH, nameData\r\n        PUSH, __2_playerID_Int32\r\n        PUSH, __6_intnl_NameData\r\n
     \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
     \       PUSH, __6_intnl_NameData\r\n        PUSH, __2_intnl_UnityEngineGameObject\r\n
@@ -1044,556 +1103,731 @@ MonoBehaviour:
     - startInstruction: 1936
       endInstruction: 1955
       startSourceChar: 838
-      endSourceChar: 915
+      endSourceChar: 919
       line: 38
       lineChar: 4
-      spanCodeSection: "public void SetNameSync(VRCPlayerApi player, int playerID,
+      spanCodeSection: "public void SetNameLateSync(VRCPlayerApi player, int playerID,
         string name)\r\n    "
     - startInstruction: 1956
       endInstruction: 1955
-      startSourceChar: 915
-      endSourceChar: 926
+      startSourceChar: 919
+      endSourceChar: 930
       line: 39
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 1956
       endInstruction: 1955
-      startSourceChar: 926
-      endSourceChar: 930
+      startSourceChar: 930
+      endSourceChar: 934
       line: 40
       lineChar: 8
       spanCodeSection: if (
     - startInstruction: 1956
       endInstruction: 1955
-      startSourceChar: 930
-      endSourceChar: 931
-      line: 40
-      lineChar: 12
-      spanCodeSection: '!'
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 931
+      startSourceChar: 934
       endSourceChar: 950
       line: 40
-      lineChar: 13
-      spanCodeSection: Networking.IsOwner(
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
     - startInstruction: 1956
-      endInstruction: 1955
+      endInstruction: 2079
       startSourceChar: 950
-      endSourceChar: 958
+      endSourceChar: 961
       line: 40
-      lineChar: 32
-      spanCodeSection: 'player, '
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 958
-      endSourceChar: 958
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 2080
+      endInstruction: 2087
+      startSourceChar: 961
+      endSourceChar: 980
       line: 40
-      lineChar: 40
-      spanCodeSection: 
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 958
-      endSourceChar: 958
-      line: 40
-      lineChar: 40
-      spanCodeSection: 
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 958
-      endSourceChar: 967
-      line: 40
-      lineChar: 40
-      spanCodeSection: nameData[
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 967
-      endSourceChar: 967
-      line: 40
-      lineChar: 49
-      spanCodeSection: 
-    - startInstruction: 1956
-      endInstruction: 1955
-      startSourceChar: 967
-      endSourceChar: 977
-      line: 40
-      lineChar: 49
-      spanCodeSection: playerID].
-    - startInstruction: 1956
-      endInstruction: 2083
-      startSourceChar: 977
-      endSourceChar: 999
-      line: 40
-      lineChar: 59
-      spanCodeSection: "gameObject))\r\n        "
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 999
-      endSourceChar: 1014
-      line: 41
-      lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1014
-      endSourceChar: 1014
+      lineChar: 39
+      spanCodeSection: "return;\r\n\r\n        "
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 980
+      endSourceChar: 984
       line: 42
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1014
-      endSourceChar: 1034
-      line: 42
-      lineChar: 12
-      spanCodeSection: Networking.SetOwner(
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1034
-      endSourceChar: 1042
-      line: 42
-      lineChar: 32
-      spanCodeSection: 'player, '
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1042
-      endSourceChar: 1042
-      line: 42
-      lineChar: 40
-      spanCodeSection: 
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1042
-      endSourceChar: 1042
-      line: 42
-      lineChar: 40
-      spanCodeSection: 
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1042
-      endSourceChar: 1051
-      line: 42
-      lineChar: 40
-      spanCodeSection: nameData[
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1051
-      endSourceChar: 1051
-      line: 42
-      lineChar: 49
-      spanCodeSection: 
-    - startInstruction: 2084
-      endInstruction: 2083
-      startSourceChar: 1051
-      endSourceChar: 1061
-      line: 42
-      lineChar: 49
-      spanCodeSection: playerID].
-    - startInstruction: 2084
-      endInstruction: 2163
-      startSourceChar: 1061
-      endSourceChar: 1087
-      line: 42
-      lineChar: 59
-      spanCodeSection: "gameObject);\r\n            "
-    - startInstruction: 2164
-      endInstruction: 2163
-      startSourceChar: 1087
-      endSourceChar: 1087
-      line: 43
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2164
-      endInstruction: 2163
-      startSourceChar: 1087
-      endSourceChar: 1097
-      line: 43
-      lineChar: 12
-      spanCodeSection: 'tPlayer = '
-    - startInstruction: 2164
-      endInstruction: 2183
-      startSourceChar: 1097
-      endSourceChar: 1118
-      line: 43
-      lineChar: 22
-      spanCodeSection: "player;\r\n            "
-    - startInstruction: 2184
-      endInstruction: 2183
-      startSourceChar: 1118
-      endSourceChar: 1118
-      line: 44
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2184
-      endInstruction: 2183
-      startSourceChar: 1118
-      endSourceChar: 1124
-      line: 44
-      lineChar: 12
-      spanCodeSection: 'tID = '
-    - startInstruction: 2184
-      endInstruction: 2203
-      startSourceChar: 1124
-      endSourceChar: 1147
-      line: 44
-      lineChar: 18
-      spanCodeSection: "playerID;\r\n            "
-    - startInstruction: 2204
-      endInstruction: 2203
-      startSourceChar: 1147
-      endSourceChar: 1147
-      line: 45
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2204
-      endInstruction: 2203
-      startSourceChar: 1147
-      endSourceChar: 1155
-      line: 45
-      lineChar: 12
-      spanCodeSection: 'tName = '
-    - startInstruction: 2204
-      endInstruction: 2223
-      startSourceChar: 1155
-      endSourceChar: 1174
-      line: 45
-      lineChar: 20
-      spanCodeSection: "name;\r\n            "
-    - startInstruction: 2224
-      endInstruction: 2223
-      startSourceChar: 1174
-      endSourceChar: 1174
-      line: 46
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2224
-      endInstruction: 2223
-      startSourceChar: 1174
-      endSourceChar: 1196
-      line: 46
-      lineChar: 12
-      spanCodeSection: delayTimer.StartTimer(
-    - startInstruction: 2224
-      endInstruction: 2223
-      startSourceChar: 1196
-      endSourceChar: 1199
-      line: 46
-      lineChar: 34
-      spanCodeSection: '0, '
-    - startInstruction: 2224
-      endInstruction: 2223
-      startSourceChar: 1199
-      endSourceChar: 1205
-      line: 46
-      lineChar: 37
-      spanCodeSection: 'this, '
-    - startInstruction: 2224
-      endInstruction: 2223
-      startSourceChar: 1205
-      endSourceChar: 1216
-      line: 46
-      lineChar: 43
-      spanCodeSection: '"SetName", '
-    - startInstruction: 2224
-      endInstruction: 2383
-      startSourceChar: 1216
-      endSourceChar: 1243
-      line: 46
-      lineChar: 54
-      spanCodeSection: "0.5f);\r\n        }\r\n        "
-    - startInstruction: 2384
-      endInstruction: 2383
-      startSourceChar: 1243
-      endSourceChar: 1257
-      line: 48
-      lineChar: 8
-      spanCodeSection: "else\r\n        "
-    - startInstruction: 2384
-      endInstruction: 2383
-      startSourceChar: 1257
-      endSourceChar: 1272
-      line: 49
-      lineChar: 8
-      spanCodeSection: "{\r\n            "
-    - startInstruction: 2384
-      endInstruction: 2383
-      startSourceChar: 1272
-      endSourceChar: 1272
-      line: 50
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2384
-      endInstruction: 2383
-      startSourceChar: 1272
-      endSourceChar: 1300
-      line: 50
-      lineChar: 12
-      spanCodeSection: nameData[playerID].SetValue(
-    - startInstruction: 2384
-      endInstruction: 2471
-      startSourceChar: 1300
-      endSourceChar: 1320
-      line: 50
-      lineChar: 40
-      spanCodeSection: "name);\r\n            "
-    - startInstruction: 2472
-      endInstruction: 2471
-      startSourceChar: 1320
-      endSourceChar: 1320
-      line: 51
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2472
-      endInstruction: 2471
-      startSourceChar: 1320
-      endSourceChar: 1330
-      line: 51
-      lineChar: 12
-      spanCodeSection: 'tPlayer = '
-    - startInstruction: 2472
-      endInstruction: 2491
-      startSourceChar: 1330
-      endSourceChar: 1349
-      line: 51
-      lineChar: 22
-      spanCodeSection: "null;\r\n            "
-    - startInstruction: 2492
-      endInstruction: 2491
-      startSourceChar: 1349
-      endSourceChar: 1349
-      line: 52
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2492
-      endInstruction: 2491
-      startSourceChar: 1349
-      endSourceChar: 1355
-      line: 52
-      lineChar: 12
-      spanCodeSection: 'tID = '
-    - startInstruction: 2492
-      endInstruction: 2491
-      startSourceChar: 1355
-      endSourceChar: 1356
-      line: 52
-      lineChar: 18
-      spanCodeSection: '-'
-    - startInstruction: 2492
-      endInstruction: 2535
-      startSourceChar: 1356
-      endSourceChar: 1372
-      line: 52
-      lineChar: 19
-      spanCodeSection: "1;\r\n            "
-    - startInstruction: 2536
-      endInstruction: 2535
-      startSourceChar: 1372
-      endSourceChar: 1372
-      line: 53
-      lineChar: 12
-      spanCodeSection: 
-    - startInstruction: 2536
-      endInstruction: 2535
-      startSourceChar: 1372
-      endSourceChar: 1380
-      line: 53
-      lineChar: 12
-      spanCodeSection: 'tName = '
-    - startInstruction: 2536
-      endInstruction: 2563
-      startSourceChar: 1380
-      endSourceChar: 1409
-      line: 53
-      lineChar: 20
-      spanCodeSection: "\"\";\r\n        }\r\n    }\r\n\r\n    "
-    - startInstruction: 2564
-      endInstruction: 2583
-      startSourceChar: 1409
-      endSourceChar: 1450
-      line: 57
-      lineChar: 4
-      spanCodeSection: "public string GetData(int playerID)\r\n    "
-    - startInstruction: 2584
-      endInstruction: 2583
-      startSourceChar: 1450
-      endSourceChar: 1461
-      line: 58
-      lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 2584
-      endInstruction: 2583
-      startSourceChar: 1461
-      endSourceChar: 1465
-      line: 59
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 2584
-      endInstruction: 2583
-      startSourceChar: 1465
-      endSourceChar: 1465
-      line: 59
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 984
+      endSourceChar: 985
+      line: 42
+      lineChar: 12
+      spanCodeSection: '!'
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 985
+      endSourceChar: 1004
+      line: 42
+      lineChar: 13
+      spanCodeSection: Networking.IsOwner(
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1004
+      endSourceChar: 1012
+      line: 42
+      lineChar: 32
+      spanCodeSection: 'player, '
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1012
+      endSourceChar: 1012
+      line: 42
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1012
+      endSourceChar: 1012
+      line: 42
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1012
+      endSourceChar: 1021
+      line: 42
+      lineChar: 40
+      spanCodeSection: nameData[
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1021
+      endSourceChar: 1021
+      line: 42
+      lineChar: 49
+      spanCodeSection: 
+    - startInstruction: 2088
+      endInstruction: 2087
+      startSourceChar: 1021
+      endSourceChar: 1031
+      line: 42
+      lineChar: 49
+      spanCodeSection: playerID].
+    - startInstruction: 2088
+      endInstruction: 2215
+      startSourceChar: 1031
+      endSourceChar: 1053
+      line: 42
+      lineChar: 59
+      spanCodeSection: "gameObject))\r\n        "
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1053
+      endSourceChar: 1068
+      line: 43
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1068
+      endSourceChar: 1068
+      line: 44
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 2584
-      endInstruction: 2603
-      startSourceChar: 1465
-      endSourceChar: 1477
-      line: 59
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1068
+      endSourceChar: 1088
+      line: 44
       lineChar: 12
-      spanCodeSection: 'nameData == '
-    - startInstruction: 2604
-      endInstruction: 2651
-      startSourceChar: 1477
-      endSourceChar: 1483
-      line: 59
-      lineChar: 24
-      spanCodeSection: 'null) '
-    - startInstruction: 2652
-      endInstruction: 2651
-      startSourceChar: 1483
-      endSourceChar: 1490
-      line: 59
-      lineChar: 30
-      spanCodeSection: 'return '
-    - startInstruction: 2652
-      endInstruction: 2679
-      startSourceChar: 1490
-      endSourceChar: 1503
-      line: 59
+      spanCodeSection: Networking.SetOwner(
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1088
+      endSourceChar: 1096
+      line: 44
+      lineChar: 32
+      spanCodeSection: 'player, '
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1096
+      endSourceChar: 1096
+      line: 44
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1096
+      endSourceChar: 1096
+      line: 44
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1096
+      endSourceChar: 1105
+      line: 44
+      lineChar: 40
+      spanCodeSection: nameData[
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1105
+      endSourceChar: 1105
+      line: 44
+      lineChar: 49
+      spanCodeSection: 
+    - startInstruction: 2216
+      endInstruction: 2215
+      startSourceChar: 1105
+      endSourceChar: 1115
+      line: 44
+      lineChar: 49
+      spanCodeSection: playerID].
+    - startInstruction: 2216
+      endInstruction: 2295
+      startSourceChar: 1115
+      endSourceChar: 1141
+      line: 44
+      lineChar: 59
+      spanCodeSection: "gameObject);\r\n            "
+    - startInstruction: 2296
+      endInstruction: 2295
+      startSourceChar: 1141
+      endSourceChar: 1141
+      line: 45
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2296
+      endInstruction: 2295
+      startSourceChar: 1141
+      endSourceChar: 1151
+      line: 45
+      lineChar: 12
+      spanCodeSection: 'tPlayer = '
+    - startInstruction: 2296
+      endInstruction: 2315
+      startSourceChar: 1151
+      endSourceChar: 1172
+      line: 45
+      lineChar: 22
+      spanCodeSection: "player;\r\n            "
+    - startInstruction: 2316
+      endInstruction: 2315
+      startSourceChar: 1172
+      endSourceChar: 1172
+      line: 46
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2316
+      endInstruction: 2315
+      startSourceChar: 1172
+      endSourceChar: 1178
+      line: 46
+      lineChar: 12
+      spanCodeSection: 'tID = '
+    - startInstruction: 2316
+      endInstruction: 2335
+      startSourceChar: 1178
+      endSourceChar: 1201
+      line: 46
+      lineChar: 18
+      spanCodeSection: "playerID;\r\n            "
+    - startInstruction: 2336
+      endInstruction: 2335
+      startSourceChar: 1201
+      endSourceChar: 1201
+      line: 47
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2336
+      endInstruction: 2335
+      startSourceChar: 1201
+      endSourceChar: 1209
+      line: 47
+      lineChar: 12
+      spanCodeSection: 'tName = '
+    - startInstruction: 2336
+      endInstruction: 2355
+      startSourceChar: 1209
+      endSourceChar: 1228
+      line: 47
+      lineChar: 20
+      spanCodeSection: "name;\r\n            "
+    - startInstruction: 2356
+      endInstruction: 2355
+      startSourceChar: 1228
+      endSourceChar: 1228
+      line: 48
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2356
+      endInstruction: 2355
+      startSourceChar: 1228
+      endSourceChar: 1250
+      line: 48
+      lineChar: 12
+      spanCodeSection: delayTimer.StartTimer(
+    - startInstruction: 2356
+      endInstruction: 2355
+      startSourceChar: 1250
+      endSourceChar: 1253
+      line: 48
+      lineChar: 34
+      spanCodeSection: '0, '
+    - startInstruction: 2356
+      endInstruction: 2355
+      startSourceChar: 1253
+      endSourceChar: 1259
+      line: 48
       lineChar: 37
-      spanCodeSection: "\"\";\r\n        "
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1503
-      endSourceChar: 1510
+      spanCodeSection: 'this, '
+    - startInstruction: 2356
+      endInstruction: 2355
+      startSourceChar: 1259
+      endSourceChar: 1278
+      line: 48
+      lineChar: 43
+      spanCodeSection: '"SetNameLateSync", '
+    - startInstruction: 2356
+      endInstruction: 2515
+      startSourceChar: 1278
+      endSourceChar: 1305
+      line: 48
+      lineChar: 62
+      spanCodeSection: "0.5f);\r\n        }\r\n        "
+    - startInstruction: 2516
+      endInstruction: 2515
+      startSourceChar: 1305
+      endSourceChar: 1319
+      line: 50
+      lineChar: 8
+      spanCodeSection: "else\r\n        "
+    - startInstruction: 2516
+      endInstruction: 2515
+      startSourceChar: 1319
+      endSourceChar: 1334
+      line: 51
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 2516
+      endInstruction: 2515
+      startSourceChar: 1334
+      endSourceChar: 1334
+      line: 52
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2516
+      endInstruction: 2515
+      startSourceChar: 1334
+      endSourceChar: 1362
+      line: 52
+      lineChar: 12
+      spanCodeSection: nameData[playerID].SetValue(
+    - startInstruction: 2516
+      endInstruction: 2603
+      startSourceChar: 1362
+      endSourceChar: 1382
+      line: 52
+      lineChar: 40
+      spanCodeSection: "name);\r\n            "
+    - startInstruction: 2604
+      endInstruction: 2603
+      startSourceChar: 1382
+      endSourceChar: 1382
+      line: 53
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2604
+      endInstruction: 2603
+      startSourceChar: 1382
+      endSourceChar: 1392
+      line: 53
+      lineChar: 12
+      spanCodeSection: 'tPlayer = '
+    - startInstruction: 2604
+      endInstruction: 2623
+      startSourceChar: 1392
+      endSourceChar: 1411
+      line: 53
+      lineChar: 22
+      spanCodeSection: "null;\r\n            "
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 1411
+      endSourceChar: 1411
+      line: 54
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 1411
+      endSourceChar: 1417
+      line: 54
+      lineChar: 12
+      spanCodeSection: 'tID = '
+    - startInstruction: 2624
+      endInstruction: 2623
+      startSourceChar: 1417
+      endSourceChar: 1418
+      line: 54
+      lineChar: 18
+      spanCodeSection: '-'
+    - startInstruction: 2624
+      endInstruction: 2667
+      startSourceChar: 1418
+      endSourceChar: 1434
+      line: 54
+      lineChar: 19
+      spanCodeSection: "1;\r\n            "
+    - startInstruction: 2668
+      endInstruction: 2667
+      startSourceChar: 1434
+      endSourceChar: 1434
+      line: 55
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2668
+      endInstruction: 2667
+      startSourceChar: 1434
+      endSourceChar: 1442
+      line: 55
+      lineChar: 12
+      spanCodeSection: 'tName = '
+    - startInstruction: 2668
+      endInstruction: 2695
+      startSourceChar: 1442
+      endSourceChar: 1471
+      line: 55
+      lineChar: 20
+      spanCodeSection: "\"\";\r\n        }\r\n    }\r\n\r\n    "
+    - startInstruction: 2696
+      endInstruction: 2715
+      startSourceChar: 1471
+      endSourceChar: 1508
+      line: 59
+      lineChar: 4
+      spanCodeSection: "bool CheckOutOfRange(int index)\r\n    "
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 1508
+      endSourceChar: 1519
       line: 60
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 1519
+      endSourceChar: 1526
+      line: 61
       lineChar: 8
       spanCodeSection: 'return '
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1510
-      endSourceChar: 1510
-      line: 60
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 1526
+      endSourceChar: 1526
+      line: 61
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1510
-      endSourceChar: 1510
-      line: 60
+    - startInstruction: 2716
+      endInstruction: 2715
+      startSourceChar: 1526
+      endSourceChar: 1526
+      line: 61
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1510
-      endSourceChar: 1510
-      line: 60
+    - startInstruction: 2716
+      endInstruction: 2735
+      startSourceChar: 1526
+      endSourceChar: 1534
+      line: 61
+      lineChar: 15
+      spanCodeSection: 'index < '
+    - startInstruction: 2736
+      endInstruction: 2827
+      startSourceChar: 1534
+      endSourceChar: 1539
+      line: 61
+      lineChar: 23
+      spanCodeSection: '0 || '
+    - startInstruction: 2828
+      endInstruction: 2827
+      startSourceChar: 1539
+      endSourceChar: 1539
+      line: 61
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 2828
+      endInstruction: 2827
+      startSourceChar: 1539
+      endSourceChar: 1539
+      line: 61
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 2828
+      endInstruction: 2827
+      startSourceChar: 1539
+      endSourceChar: 1548
+      line: 61
+      lineChar: 28
+      spanCodeSection: nameData.
+    - startInstruction: 2828
+      endInstruction: 2851
+      startSourceChar: 1548
+      endSourceChar: 1558
+      line: 61
+      lineChar: 37
+      spanCodeSection: 'Length <= '
+    - startInstruction: 2852
+      endInstruction: 2971
+      startSourceChar: 1558
+      endSourceChar: 1579
+      line: 61
+      lineChar: 47
+      spanCodeSection: "index;\r\n    }\r\n\r\n    "
+    - startInstruction: 2972
+      endInstruction: 2991
+      startSourceChar: 1579
+      endSourceChar: 1620
+      line: 64
+      lineChar: 4
+      spanCodeSection: "public string GetData(int playerID)\r\n    "
+    - startInstruction: 2992
+      endInstruction: 2991
+      startSourceChar: 1620
+      endSourceChar: 1631
+      line: 65
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2992
+      endInstruction: 2991
+      startSourceChar: 1631
+      endSourceChar: 1635
+      line: 66
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 2992
+      endInstruction: 2991
+      startSourceChar: 1635
+      endSourceChar: 1635
+      line: 66
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 2992
+      endInstruction: 3011
+      startSourceChar: 1635
+      endSourceChar: 1647
+      line: 66
+      lineChar: 12
+      spanCodeSection: 'nameData == '
+    - startInstruction: 3012
+      endInstruction: 3059
+      startSourceChar: 1647
+      endSourceChar: 1653
+      line: 66
+      lineChar: 24
+      spanCodeSection: 'null) '
+    - startInstruction: 3060
+      endInstruction: 3059
+      startSourceChar: 1653
+      endSourceChar: 1660
+      line: 66
+      lineChar: 30
+      spanCodeSection: 'return '
+    - startInstruction: 3060
+      endInstruction: 3087
+      startSourceChar: 1660
+      endSourceChar: 1673
+      line: 66
+      lineChar: 37
+      spanCodeSection: "\"\";\r\n        "
+    - startInstruction: 3088
+      endInstruction: 3087
+      startSourceChar: 1673
+      endSourceChar: 1677
+      line: 67
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 3088
+      endInstruction: 3087
+      startSourceChar: 1677
+      endSourceChar: 1693
+      line: 67
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 3088
+      endInstruction: 3211
+      startSourceChar: 1693
+      endSourceChar: 1704
+      line: 67
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 3212
+      endInstruction: 3211
+      startSourceChar: 1704
+      endSourceChar: 1711
+      line: 67
+      lineChar: 39
+      spanCodeSection: 'return '
+    - startInstruction: 3212
+      endInstruction: 3239
+      startSourceChar: 1711
+      endSourceChar: 1724
+      line: 67
+      lineChar: 46
+      spanCodeSection: "\"\";\r\n        "
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1724
+      endSourceChar: 1731
+      line: 68
+      lineChar: 8
+      spanCodeSection: 'return '
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1731
+      endSourceChar: 1731
+      line: 68
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1510
-      endSourceChar: 1519
-      line: 60
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1731
+      endSourceChar: 1731
+      line: 68
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1731
+      endSourceChar: 1731
+      line: 68
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1731
+      endSourceChar: 1740
+      line: 68
       lineChar: 15
       spanCodeSection: nameData[
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1519
-      endSourceChar: 1519
-      line: 60
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1740
+      endSourceChar: 1740
+      line: 68
       lineChar: 24
       spanCodeSection: 
-    - startInstruction: 2680
-      endInstruction: 2679
-      startSourceChar: 1519
-      endSourceChar: 1529
-      line: 60
+    - startInstruction: 3240
+      endInstruction: 3239
+      startSourceChar: 1740
+      endSourceChar: 1750
+      line: 68
       lineChar: 24
       spanCodeSection: playerID].
-    - startInstruction: 2680
-      endInstruction: 2827
-      startSourceChar: 1529
-      endSourceChar: 1555
-      line: 60
+    - startInstruction: 3240
+      endInstruction: 3387
+      startSourceChar: 1750
+      endSourceChar: 1776
+      line: 68
       lineChar: 34
       spanCodeSection: "GetValue();\r\n    }\r\n\r\n    "
-    - startInstruction: 2828
-      endInstruction: 2847
-      startSourceChar: 1555
-      endSourceChar: 1624
-      line: 63
+    - startInstruction: 3388
+      endInstruction: 3407
+      startSourceChar: 1776
+      endSourceChar: 1845
+      line: 71
       lineChar: 4
       spanCodeSection: "public void SetDataOwnership(VRCPlayerApi player, int playerID)\r\n
         \   "
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1624
-      endSourceChar: 1635
-      line: 64
+    - startInstruction: 3408
+      endInstruction: 3407
+      startSourceChar: 1845
+      endSourceChar: 1856
+      line: 72
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1635
-      endSourceChar: 1635
-      line: 65
+    - startInstruction: 3408
+      endInstruction: 3407
+      startSourceChar: 1856
+      endSourceChar: 1860
+      line: 73
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 3408
+      endInstruction: 3407
+      startSourceChar: 1860
+      endSourceChar: 1876
+      line: 73
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 3408
+      endInstruction: 3531
+      startSourceChar: 1876
+      endSourceChar: 1887
+      line: 73
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 3532
+      endInstruction: 3539
+      startSourceChar: 1887
+      endSourceChar: 1904
+      line: 73
+      lineChar: 39
+      spanCodeSection: "return;\r\n        "
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1904
+      endSourceChar: 1904
+      line: 74
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1635
-      endSourceChar: 1655
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1904
+      endSourceChar: 1924
+      line: 74
       lineChar: 8
       spanCodeSection: Networking.SetOwner(
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1655
-      endSourceChar: 1663
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1924
+      endSourceChar: 1932
+      line: 74
       lineChar: 28
       spanCodeSection: 'player, '
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1663
-      endSourceChar: 1663
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1932
+      endSourceChar: 1932
+      line: 74
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1663
-      endSourceChar: 1663
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1932
+      endSourceChar: 1932
+      line: 74
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1663
-      endSourceChar: 1672
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1932
+      endSourceChar: 1941
+      line: 74
       lineChar: 36
       spanCodeSection: nameData[
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1672
-      endSourceChar: 1672
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1941
+      endSourceChar: 1941
+      line: 74
       lineChar: 45
       spanCodeSection: 
-    - startInstruction: 2848
-      endInstruction: 2847
-      startSourceChar: 1672
-      endSourceChar: 1682
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3539
+      startSourceChar: 1941
+      endSourceChar: 1951
+      line: 74
       lineChar: 45
       spanCodeSection: playerID].
-    - startInstruction: 2848
-      endInstruction: 2848
-      startSourceChar: 1682
-      endSourceChar: 1682
-      line: 65
+    - startInstruction: 3540
+      endInstruction: 3540
+      startSourceChar: 1951
+      endSourceChar: 1951
+      line: 74
       lineChar: 55
       spanCodeSection: 
   hasInteractEvent: 0

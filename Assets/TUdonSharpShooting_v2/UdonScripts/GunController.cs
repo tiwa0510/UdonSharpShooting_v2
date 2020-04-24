@@ -30,7 +30,6 @@ public class GunController : UdonSharpBehaviour
         bulletNumMax = _bulletNumMax;
         bulletNum    = _bulletNumMax;
         gameManager = transform.root.GetComponent<GameManager>();
-        //gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer, playerID);
         audioManager = gameManager.GetAudioManager();
         bullet.InitData(this);
     }
@@ -86,7 +85,8 @@ public class GunController : UdonSharpBehaviour
     public override void OnPickup()
     {
         delayTimer.StopTimer(0);
-        gameManager.GetNameManager().SetNameSync(Networking.LocalPlayer, playerID, Networking.LocalPlayer.displayName);
+        gameManager.GetScoreManager().SetDataOwnership(Networking.LocalPlayer, playerID);
+        gameManager.GetNameManager().SetNameLateSync(Networking.LocalPlayer, playerID, Networking.LocalPlayer.displayName);
     }
 
     public override void OnDrop()

@@ -8,7 +8,7 @@ public class GunSetting : UdonSharpBehaviour
 {
     [SerializeField] int bulletNumMax;
     [SerializeField] int ATK;
-    [SerializeField] GunController[] guns;
+    [SerializeField] GameObject guns;
 
     void Start()
     {
@@ -17,9 +17,9 @@ public class GunSetting : UdonSharpBehaviour
 
     void Init()
     {
-        for(int i = 0; i < guns.Length; i++)
+        for(int i = 0; i < guns.transform.childCount; i++)
         {
-            guns[i].InitData(i, ATK, bulletNumMax);
+            guns.transform.GetChild(i).GetComponent<GunController>().InitData(i, ATK, bulletNumMax);
         }
     }
 }

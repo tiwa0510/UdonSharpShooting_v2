@@ -17,33 +17,43 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
     null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    scoreData:
     %UnityEngineComponentArray, null\r\n    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform,
-    this\r\n    __0_i_Int32: %SystemInt32, null\r\n    __0_playerID_Int32: %SystemInt32,
-    null\r\n    __0_score_Int32: %SystemInt32, null\r\n    __1_i_Int32: %SystemInt32,
-    null\r\n    __1_playerID_Int32: %SystemInt32, null\r\n    __1_score_Int32: %SystemInt32,
-    null\r\n    __2_playerID_Int32: %SystemInt32, null\r\n    __3_playerID_Int32:
-    %SystemInt32, null\r\n    __0_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null\r\n
-    \   __0_const_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
-    \   __0_const_intnl_SystemInt32: %SystemInt32, null\r\n    __1_const_intnl_SystemInt32:
-    %SystemInt32, null\r\n    __0_const_intnl_SystemInt64: %SystemInt64, null\r\n
-    \   __1_const_intnl_SystemInt64: %SystemInt64, null\r\n    __0_const_intnl_SystemObject:
-    %SystemObject, null\r\n    __0_const_intnl_SystemString: %SystemString, null\r\n
-    \   __1_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
-    %SystemString, null\r\n    __3_const_intnl_SystemString: %SystemString, null\r\n
-    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
-    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
-    \   __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_ScoreData:
+    this\r\n    __0_i_Int32: %SystemInt32, null\r\n    __0_index_Int32: %SystemInt32,
+    null\r\n    __0_playerID_Int32: %SystemInt32, null\r\n    __0_score_Int32: %SystemInt32,
+    null\r\n    __1_i_Int32: %SystemInt32, null\r\n    __1_playerID_Int32: %SystemInt32,
+    null\r\n    __1_score_Int32: %SystemInt32, null\r\n    __2_playerID_Int32: %SystemInt32,
+    null\r\n    __3_playerID_Int32: %SystemInt32, null\r\n    __0_player_VRCPlayerApi:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __0_const_intnl_UnityEngineComponentArray:
+    %UnityEngineComponentArray, null\r\n    __0_const_intnl_SystemInt32: %SystemInt32,
+    null\r\n    __1_const_intnl_SystemInt32: %SystemInt32, null\r\n    __0_const_intnl_SystemInt64:
+    %SystemInt64, null\r\n    __1_const_intnl_SystemInt64: %SystemInt64, null\r\n
+    \   __0_const_intnl_SystemObject: %SystemObject, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __2_const_intnl_SystemString: %SystemString, null\r\n    __3_const_intnl_SystemString:
+    %SystemString, null\r\n    __4_const_intnl_SystemString: %SystemString, null\r\n
+    \   __5_const_intnl_SystemString: %SystemString, null\r\n    __6_const_intnl_SystemString:
+    %SystemString, null\r\n    __0_const_intnl_SystemType: %SystemType, null\r\n    __0_const_intnl_ScoreData:
     %VRCUdonUdonBehaviour, null\r\n    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
-    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __0_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __1_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __2_intnl_SystemBoolean: %SystemBoolean, null\r\n    __3_intnl_SystemBoolean:
-    %SystemBoolean, null\r\n    __4_intnl_SystemBoolean: %SystemBoolean, null\r\n
-    \   __5_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_UnityEngineComponent:
-    %UnityEngineComponent, null\r\n    __0_intnl_ScoreDataArray: %UnityEngineComponentArray,
-    null\r\n    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null\r\n
-    \   __1_intnl_ScoreDataArray: %UnityEngineComponentArray, null\r\n    __1_intnl_UnityEngineComponentArray:
+    null\r\n    __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __1_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32,
+    null\r\n    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null\r\n    __4_const_intnl_exitJumpLoc_UInt32:
+    %SystemUInt32, null\r\n    __0_intnl_returnValSymbol_Boolean: %SystemBoolean,
+    null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n    __1_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __10_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __11_intnl_SystemBoolean: %SystemBoolean, null\r\n    __12_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __13_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __14_intnl_SystemBoolean: %SystemBoolean, null\r\n    __2_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __3_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __4_intnl_SystemBoolean: %SystemBoolean, null\r\n    __5_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __6_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __7_intnl_SystemBoolean: %SystemBoolean, null\r\n    __8_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __9_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __0_intnl_UnityEngineComponent: %UnityEngineComponent, null\r\n    __0_intnl_ScoreDataArray:
+    %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray,
+    null\r\n    __1_intnl_ScoreDataArray: %UnityEngineComponentArray, null\r\n    __1_intnl_UnityEngineComponentArray:
     %UnityEngineComponentArray, null\r\n    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject,
     null\r\n    __0_intnl_returnValSymbol_Int32: %SystemInt32, null\r\n    __0_intnl_SystemInt32:
     %SystemInt32, null\r\n    __1_intnl_SystemInt32: %SystemInt32, null\r\n    __10_intnl_SystemInt32:
+    %SystemInt32, null\r\n    __11_intnl_SystemInt32: %SystemInt32, null\r\n    __12_intnl_SystemInt32:
     %SystemInt32, null\r\n    __2_intnl_SystemInt32: %SystemInt32, null\r\n    __3_intnl_SystemInt32:
     %SystemInt32, null\r\n    __4_intnl_SystemInt32: %SystemInt32, null\r\n    __5_intnl_SystemInt32:
     %SystemInt32, null\r\n    __6_intnl_SystemInt32: %SystemInt32, null\r\n    __7_intnl_SystemInt32:
@@ -56,7 +66,10 @@ MonoBehaviour:
     null\r\n    __3_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __4_intnl_ScoreData:
     %VRCUdonUdonBehaviour, null\r\n    __5_intnl_ScoreData: %VRCUdonUdonBehaviour,
     null\r\n    __6_intnl_ScoreData: %VRCUdonUdonBehaviour, null\r\n    __0_intnl_oldReturnLoc_UInt32:
-    %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
+    %SystemUInt32, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32, null\r\n
+    \   __1_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n    __2_intnl_oldReturnLoc_UInt32:
+    %SystemUInt32, null\r\n    __3_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n
+    \   __4_intnl_oldReturnLoc_UInt32: %SystemUInt32, null\r\n\r\n.data_end\r\n\r\n
     \       \r\n         # using UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n
     \       \r\n         # using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n
     \       \r\n         # public class ScoreManager : UdonSharpBehaviour\r\n.code_start\r\n
@@ -145,25 +158,63 @@ MonoBehaviour:
     __9_intnl_SystemInt32\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n
     \       PUSH, __9_intnl_SystemInt32\r\n        PUSH, __1_i_Int32\r\n        COPY\r\n
     \       JUMP, 0x000003C4\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
-    \       \r\n        \r\n         # public void SetValue(int playerID, int score)\r\n
-    \   .export SetValue\r\n        \r\n    SetValue:\r\n        \r\n        PUSH,
-    __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
-    \       COPY\r\n        \r\n         # {\r\n        \r\n         # scoreData[playerID].SetValue(score);\r\n
-    \       PUSH, scoreData\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __3_intnl_ScoreData\r\n
-    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
-    \       PUSH, __3_intnl_ScoreData\r\n        PUSH, __1_const_intnl_SystemString\r\n
-    \       PUSH, __0_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    \       \r\n        \r\n         # bool CheckOutOfRange(int index)\r\n    CheckOutOfRange:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # return index
+    < 0 || scoreData.Length <= index;\r\n        PUSH, __0_index_Int32\r\n        PUSH,
+    __10_intnl_SystemInt32\r\n        COPY\r\n        PUSH, __10_intnl_SystemInt32\r\n
+    \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __6_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __6_intnl_SystemBoolean\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       COPY\r\n        PUSH, __5_intnl_SystemBoolean\r\n        PUSH, __7_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005C0\r\n
+    \       PUSH, scoreData\r\n        PUSH, __11_intnl_SystemInt32\r\n        EXTERN,
+    \"UnityEngineComponentArray.__get_Length__SystemInt32\"\r\n        PUSH, __11_intnl_SystemInt32\r\n
+    \       PUSH, __0_index_Int32\r\n        PUSH, __8_intnl_SystemBoolean\r\n        EXTERN,
+    \"SystemInt32.__op_LessThanOrEqual__SystemInt32_SystemInt32__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        PUSH, __8_intnl_SystemBoolean\r\n
+    \       PUSH, __9_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __9_intnl_SystemBoolean\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       COPY\r\n        PUSH, __5_intnl_SystemBoolean\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public void
+    SetValue(int playerID, int score)\r\n    .export SetValue\r\n        \r\n    SetValue:\r\n
+    \       \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        \r\n         # {\r\n        \r\n         # if (CheckOutOfRange(playerID))
+    return;\r\n        PUSH, __0_playerID_Int32\r\n        PUSH, __0_index_Int32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n        PUSH, __1_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __1_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000004E4\r\n
+    \       PUSH, __1_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __10_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __10_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x0000067C\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # scoreData[playerID].SetValue(score);\r\n        PUSH, scoreData\r\n
+    \       PUSH, __0_playerID_Int32\r\n        PUSH, __3_intnl_ScoreData\r\n        EXTERN,
+    \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n        PUSH,
+    __3_intnl_ScoreData\r\n        PUSH, __1_const_intnl_SystemString\r\n        PUSH,
+    __0_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, __3_intnl_ScoreData\r\n        PUSH, __2_const_intnl_SystemString\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
     \        # public void AddValue(int playerID, int score)\r\n    .export AddValue\r\n
     \       \r\n    AddValue:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # scoreData[playerID].AddValue(score);\r\n        PUSH,
-    scoreData\r\n        PUSH, __1_playerID_Int32\r\n        PUSH, __4_intnl_ScoreData\r\n
-    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
-    \       PUSH, __4_intnl_ScoreData\r\n        PUSH, __3_const_intnl_SystemString\r\n
-    \       PUSH, __1_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
+    {\r\n        \r\n         # if (CheckOutOfRange(playerID)) return;\r\n        PUSH,
+    __1_playerID_Int32\r\n        PUSH, __0_index_Int32\r\n        COPY\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        PUSH, __2_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __2_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000004E4\r\n
+    \       PUSH, __2_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __11_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __11_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000774\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # scoreData[playerID].AddValue(score);\r\n        PUSH, scoreData\r\n
+    \       PUSH, __1_playerID_Int32\r\n        PUSH, __4_intnl_ScoreData\r\n        EXTERN,
+    \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n        PUSH,
+    __4_intnl_ScoreData\r\n        PUSH, __3_const_intnl_SystemString\r\n        PUSH,
+    __1_score_Int32\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n
     \       PUSH, __4_intnl_ScoreData\r\n        PUSH, __4_const_intnl_SystemString\r\n
     \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n
@@ -172,27 +223,45 @@ MonoBehaviour:
     __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         # {\r\n
     \       \r\n         # if (scoreData == null) return 0;\r\n        PUSH, scoreData\r\n
     \       PUSH, __1_intnl_ScoreDataArray\r\n        COPY\r\n        PUSH, __1_intnl_ScoreDataArray\r\n
-    \       PUSH, __0_const_intnl_UnityEngineComponentArray\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       PUSH, __0_const_intnl_UnityEngineComponentArray\r\n        PUSH, __12_intnl_SystemBoolean\r\n
     \       EXTERN, \"SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean\"\r\n
-    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x0000062C\r\n
+    \       PUSH, __12_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000848\r\n
     \       PUSH, __0_const_intnl_SystemInt32\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n
     \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n
-    \        # return scoreData[playerID].GetValue();\r\n        PUSH, scoreData\r\n
-    \       PUSH, __2_playerID_Int32\r\n        PUSH, __5_intnl_ScoreData\r\n        EXTERN,
-    \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n        PUSH,
-    __5_intnl_ScoreData\r\n        PUSH, __5_const_intnl_SystemString\r\n        EXTERN,
-    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \        # if (CheckOutOfRange(playerID)) return 0;\r\n        PUSH, __2_playerID_Int32\r\n
+    \       PUSH, __0_index_Int32\r\n        COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       PUSH, __3_intnl_oldReturnLoc_UInt32\r\n        COPY\r\n        PUSH, __3_const_intnl_exitJumpLoc_UInt32\r\n
+    \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000004E4\r\n
+    \       PUSH, __3_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __13_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __13_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x000008E0\r\n        PUSH, __0_const_intnl_SystemInt32\r\n
+    \       PUSH, __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n        JUMP_INDIRECT,
+    __0_intnl_returnTarget_UInt32\r\n        \r\n         # return scoreData[playerID].GetValue();\r\n
+    \       PUSH, scoreData\r\n        PUSH, __2_playerID_Int32\r\n        PUSH, __5_intnl_ScoreData\r\n
+    \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
+    \       PUSH, __5_intnl_ScoreData\r\n        PUSH, __5_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
     \       PUSH, __5_intnl_ScoreData\r\n        PUSH, __6_const_intnl_SystemString\r\n
     \       PUSH, __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
-    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __10_intnl_SystemInt32\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __12_intnl_SystemInt32\r\n
     \       EXTERN, \"SystemConvert.__ToInt32__SystemObject__SystemInt32\"\r\n        PUSH,
-    __10_intnl_SystemInt32\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n
+    __12_intnl_SystemInt32\r\n        PUSH, __0_intnl_returnValSymbol_Int32\r\n        COPY\r\n
     \       JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        JUMP_INDIRECT,
     __0_intnl_returnTarget_UInt32\r\n        \r\n        \r\n         # public void
     SetDataOwnership(VRCPlayerApi player, int playerID)\r\n    .export SetDataOwnership\r\n
     \       \r\n    SetDataOwnership:\r\n        \r\n        PUSH, __0_const_intnl_SystemUInt32\r\n
     \       PUSH, __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        \r\n         #
-    {\r\n        \r\n         # Networking.SetOwner(player, scoreData[playerID].gameObject);\r\n
+    {\r\n        \r\n         # if (CheckOutOfRange(playerID)) return;\r\n        PUSH,
+    __3_playerID_Int32\r\n        PUSH, __0_index_Int32\r\n        COPY\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        PUSH, __4_intnl_oldReturnLoc_UInt32\r\n
+    \       COPY\r\n        PUSH, __4_const_intnl_exitJumpLoc_UInt32\r\n        PUSH,
+    __0_intnl_returnTarget_UInt32\r\n        COPY\r\n        JUMP, 0x000004E4\r\n
+    \       PUSH, __4_intnl_oldReturnLoc_UInt32\r\n        PUSH, __0_intnl_returnTarget_UInt32\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnValSymbol_Boolean\r\n        PUSH,
+    __14_intnl_SystemBoolean\r\n        COPY\r\n        PUSH, __14_intnl_SystemBoolean\r\n
+    \       JUMP_IF_FALSE, 0x00000A0C\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n
+    \       \r\n         # Networking.SetOwner(player, scoreData[playerID].gameObject);\r\n
     \       PUSH, scoreData\r\n        PUSH, __3_playerID_Int32\r\n        PUSH, __6_intnl_ScoreData\r\n
     \       EXTERN, \"UnityEngineComponentArray.__Get__SystemInt32__UnityEngineComponent\"\r\n
     \       PUSH, __6_intnl_ScoreData\r\n        PUSH, __0_intnl_UnityEngineGameObject\r\n
@@ -727,261 +796,464 @@ MonoBehaviour:
     - startInstruction: 1232
       endInstruction: 1251
       startSourceChar: 594
-      endSourceChar: 645
+      endSourceChar: 631
       line: 29
       lineChar: 4
-      spanCodeSection: "public void SetValue(int playerID, int score)\r\n    "
+      spanCodeSection: "bool CheckOutOfRange(int index)\r\n    "
     - startInstruction: 1252
       endInstruction: 1251
-      startSourceChar: 645
-      endSourceChar: 656
+      startSourceChar: 631
+      endSourceChar: 642
       line: 30
       lineChar: 4
       spanCodeSection: "{\r\n        "
     - startInstruction: 1252
       endInstruction: 1251
-      startSourceChar: 656
-      endSourceChar: 656
+      startSourceChar: 642
+      endSourceChar: 649
       line: 31
       lineChar: 8
+      spanCodeSection: 'return '
+    - startInstruction: 1252
+      endInstruction: 1251
+      startSourceChar: 649
+      endSourceChar: 649
+      line: 31
+      lineChar: 15
       spanCodeSection: 
     - startInstruction: 1252
       endInstruction: 1251
-      startSourceChar: 656
-      endSourceChar: 685
+      startSourceChar: 649
+      endSourceChar: 649
       line: 31
-      lineChar: 8
-      spanCodeSection: scoreData[playerID].SetValue(
+      lineChar: 15
+      spanCodeSection: 
     - startInstruction: 1252
-      endInstruction: 1347
-      startSourceChar: 685
-      endSourceChar: 707
+      endInstruction: 1271
+      startSourceChar: 649
+      endSourceChar: 657
       line: 31
-      lineChar: 37
-      spanCodeSection: "score);\r\n    }\r\n\r\n    "
-    - startInstruction: 1348
-      endInstruction: 1367
-      startSourceChar: 707
-      endSourceChar: 758
+      lineChar: 15
+      spanCodeSection: 'index < '
+    - startInstruction: 1272
+      endInstruction: 1363
+      startSourceChar: 657
+      endSourceChar: 662
+      line: 31
+      lineChar: 23
+      spanCodeSection: '0 || '
+    - startInstruction: 1364
+      endInstruction: 1363
+      startSourceChar: 662
+      endSourceChar: 662
+      line: 31
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 1364
+      endInstruction: 1363
+      startSourceChar: 662
+      endSourceChar: 662
+      line: 31
+      lineChar: 28
+      spanCodeSection: 
+    - startInstruction: 1364
+      endInstruction: 1363
+      startSourceChar: 662
+      endSourceChar: 672
+      line: 31
+      lineChar: 28
+      spanCodeSection: scoreData.
+    - startInstruction: 1364
+      endInstruction: 1387
+      startSourceChar: 672
+      endSourceChar: 682
+      line: 31
+      lineChar: 38
+      spanCodeSection: 'Length <= '
+    - startInstruction: 1388
+      endInstruction: 1507
+      startSourceChar: 682
+      endSourceChar: 703
+      line: 31
+      lineChar: 48
+      spanCodeSection: "index;\r\n    }\r\n\r\n    "
+    - startInstruction: 1508
+      endInstruction: 1527
+      startSourceChar: 703
+      endSourceChar: 754
       line: 34
       lineChar: 4
-      spanCodeSection: "public void AddValue(int playerID, int score)\r\n    "
-    - startInstruction: 1368
-      endInstruction: 1367
-      startSourceChar: 758
-      endSourceChar: 769
+      spanCodeSection: "public void SetValue(int playerID, int score)\r\n    "
+    - startInstruction: 1528
+      endInstruction: 1527
+      startSourceChar: 754
+      endSourceChar: 765
       line: 35
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1368
-      endInstruction: 1367
-      startSourceChar: 769
+    - startInstruction: 1528
+      endInstruction: 1527
+      startSourceChar: 765
       endSourceChar: 769
       line: 36
       lineChar: 8
-      spanCodeSection: 
-    - startInstruction: 1368
-      endInstruction: 1367
+      spanCodeSection: if (
+    - startInstruction: 1528
+      endInstruction: 1527
       startSourceChar: 769
-      endSourceChar: 798
+      endSourceChar: 785
       line: 36
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 1528
+      endInstruction: 1651
+      startSourceChar: 785
+      endSourceChar: 796
+      line: 36
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 1652
+      endInstruction: 1659
+      startSourceChar: 796
+      endSourceChar: 813
+      line: 36
+      lineChar: 39
+      spanCodeSection: "return;\r\n        "
+    - startInstruction: 1660
+      endInstruction: 1659
+      startSourceChar: 813
+      endSourceChar: 813
+      line: 37
       lineChar: 8
-      spanCodeSection: scoreData[playerID].AddValue(
-    - startInstruction: 1368
-      endInstruction: 1463
-      startSourceChar: 798
-      endSourceChar: 820
-      line: 36
+      spanCodeSection: 
+    - startInstruction: 1660
+      endInstruction: 1659
+      startSourceChar: 813
+      endSourceChar: 842
+      line: 37
+      lineChar: 8
+      spanCodeSection: scoreData[playerID].SetValue(
+    - startInstruction: 1660
+      endInstruction: 1755
+      startSourceChar: 842
+      endSourceChar: 864
+      line: 37
       lineChar: 37
       spanCodeSection: "score);\r\n    }\r\n\r\n    "
-    - startInstruction: 1464
-      endInstruction: 1483
-      startSourceChar: 820
-      endSourceChar: 858
-      line: 39
-      lineChar: 4
-      spanCodeSection: "public int GetData(int playerID)\r\n    "
-    - startInstruction: 1484
-      endInstruction: 1483
-      startSourceChar: 858
-      endSourceChar: 869
+    - startInstruction: 1756
+      endInstruction: 1775
+      startSourceChar: 864
+      endSourceChar: 915
       line: 40
       lineChar: 4
-      spanCodeSection: "{\r\n        "
-    - startInstruction: 1484
-      endInstruction: 1483
-      startSourceChar: 869
-      endSourceChar: 873
+      spanCodeSection: "public void AddValue(int playerID, int score)\r\n    "
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 915
+      endSourceChar: 926
       line: 41
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 926
+      endSourceChar: 930
+      line: 42
       lineChar: 8
       spanCodeSection: if (
-    - startInstruction: 1484
-      endInstruction: 1483
-      startSourceChar: 873
-      endSourceChar: 873
-      line: 41
+    - startInstruction: 1776
+      endInstruction: 1775
+      startSourceChar: 930
+      endSourceChar: 946
+      line: 42
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 1776
+      endInstruction: 1899
+      startSourceChar: 946
+      endSourceChar: 957
+      line: 42
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 1900
+      endInstruction: 1907
+      startSourceChar: 957
+      endSourceChar: 974
+      line: 42
+      lineChar: 39
+      spanCodeSection: "return;\r\n        "
+    - startInstruction: 1908
+      endInstruction: 1907
+      startSourceChar: 974
+      endSourceChar: 974
+      line: 43
+      lineChar: 8
+      spanCodeSection: 
+    - startInstruction: 1908
+      endInstruction: 1907
+      startSourceChar: 974
+      endSourceChar: 1003
+      line: 43
+      lineChar: 8
+      spanCodeSection: scoreData[playerID].AddValue(
+    - startInstruction: 1908
+      endInstruction: 2003
+      startSourceChar: 1003
+      endSourceChar: 1025
+      line: 43
+      lineChar: 37
+      spanCodeSection: "score);\r\n    }\r\n\r\n    "
+    - startInstruction: 2004
+      endInstruction: 2023
+      startSourceChar: 1025
+      endSourceChar: 1063
+      line: 46
+      lineChar: 4
+      spanCodeSection: "public int GetData(int playerID)\r\n    "
+    - startInstruction: 2024
+      endInstruction: 2023
+      startSourceChar: 1063
+      endSourceChar: 1074
+      line: 47
+      lineChar: 4
+      spanCodeSection: "{\r\n        "
+    - startInstruction: 2024
+      endInstruction: 2023
+      startSourceChar: 1074
+      endSourceChar: 1078
+      line: 48
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 2024
+      endInstruction: 2023
+      startSourceChar: 1078
+      endSourceChar: 1078
+      line: 48
       lineChar: 12
       spanCodeSection: 
-    - startInstruction: 1484
-      endInstruction: 1503
-      startSourceChar: 873
-      endSourceChar: 886
-      line: 41
+    - startInstruction: 2024
+      endInstruction: 2043
+      startSourceChar: 1078
+      endSourceChar: 1091
+      line: 48
       lineChar: 12
       spanCodeSection: 'scoreData == '
-    - startInstruction: 1504
-      endInstruction: 1551
-      startSourceChar: 886
-      endSourceChar: 892
-      line: 41
+    - startInstruction: 2044
+      endInstruction: 2091
+      startSourceChar: 1091
+      endSourceChar: 1097
+      line: 48
       lineChar: 25
       spanCodeSection: 'null) '
-    - startInstruction: 1552
-      endInstruction: 1551
-      startSourceChar: 892
-      endSourceChar: 899
-      line: 41
+    - startInstruction: 2092
+      endInstruction: 2091
+      startSourceChar: 1097
+      endSourceChar: 1104
+      line: 48
       lineChar: 31
       spanCodeSection: 'return '
-    - startInstruction: 1552
-      endInstruction: 1579
-      startSourceChar: 899
-      endSourceChar: 911
-      line: 41
+    - startInstruction: 2092
+      endInstruction: 2119
+      startSourceChar: 1104
+      endSourceChar: 1116
+      line: 48
       lineChar: 38
       spanCodeSection: "0;\r\n        "
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 911
-      endSourceChar: 918
-      line: 42
+    - startInstruction: 2120
+      endInstruction: 2119
+      startSourceChar: 1116
+      endSourceChar: 1120
+      line: 49
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 2120
+      endInstruction: 2119
+      startSourceChar: 1120
+      endSourceChar: 1136
+      line: 49
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 2120
+      endInstruction: 2243
+      startSourceChar: 1136
+      endSourceChar: 1147
+      line: 49
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 2244
+      endInstruction: 2243
+      startSourceChar: 1147
+      endSourceChar: 1154
+      line: 49
+      lineChar: 39
+      spanCodeSection: 'return '
+    - startInstruction: 2244
+      endInstruction: 2271
+      startSourceChar: 1154
+      endSourceChar: 1168
+      line: 49
+      lineChar: 46
+      spanCodeSection: "0;\r\n\r\n        "
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1168
+      endSourceChar: 1175
+      line: 51
       lineChar: 8
       spanCodeSection: 'return '
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 918
-      endSourceChar: 918
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1175
+      endSourceChar: 1175
+      line: 51
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 918
-      endSourceChar: 918
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1175
+      endSourceChar: 1175
+      line: 51
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 918
-      endSourceChar: 918
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1175
+      endSourceChar: 1175
+      line: 51
       lineChar: 15
       spanCodeSection: 
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 918
-      endSourceChar: 928
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1175
+      endSourceChar: 1185
+      line: 51
       lineChar: 15
       spanCodeSection: scoreData[
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 928
-      endSourceChar: 928
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1185
+      endSourceChar: 1185
+      line: 51
       lineChar: 25
       spanCodeSection: 
-    - startInstruction: 1580
-      endInstruction: 1579
-      startSourceChar: 928
-      endSourceChar: 938
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2271
+      startSourceChar: 1185
+      endSourceChar: 1195
+      line: 51
       lineChar: 25
       spanCodeSection: playerID].
-    - startInstruction: 1580
-      endInstruction: 1727
-      startSourceChar: 938
-      endSourceChar: 964
-      line: 42
+    - startInstruction: 2272
+      endInstruction: 2419
+      startSourceChar: 1195
+      endSourceChar: 1221
+      line: 51
       lineChar: 35
       spanCodeSection: "GetValue();\r\n    }\r\n\r\n    "
-    - startInstruction: 1728
-      endInstruction: 1747
-      startSourceChar: 964
-      endSourceChar: 1033
-      line: 45
+    - startInstruction: 2420
+      endInstruction: 2439
+      startSourceChar: 1221
+      endSourceChar: 1290
+      line: 54
       lineChar: 4
       spanCodeSection: "public void SetDataOwnership(VRCPlayerApi player, int playerID)\r\n
         \   "
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1033
-      endSourceChar: 1044
-      line: 46
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1290
+      endSourceChar: 1301
+      line: 55
       lineChar: 4
       spanCodeSection: "{\r\n        "
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1044
-      endSourceChar: 1044
-      line: 47
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1301
+      endSourceChar: 1305
+      line: 56
+      lineChar: 8
+      spanCodeSection: if (
+    - startInstruction: 2440
+      endInstruction: 2439
+      startSourceChar: 1305
+      endSourceChar: 1321
+      line: 56
+      lineChar: 12
+      spanCodeSection: CheckOutOfRange(
+    - startInstruction: 2440
+      endInstruction: 2563
+      startSourceChar: 1321
+      endSourceChar: 1332
+      line: 56
+      lineChar: 28
+      spanCodeSection: 'playerID)) '
+    - startInstruction: 2564
+      endInstruction: 2571
+      startSourceChar: 1332
+      endSourceChar: 1349
+      line: 56
+      lineChar: 39
+      spanCodeSection: "return;\r\n        "
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1349
+      endSourceChar: 1349
+      line: 57
       lineChar: 8
       spanCodeSection: 
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1044
-      endSourceChar: 1064
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1349
+      endSourceChar: 1369
+      line: 57
       lineChar: 8
       spanCodeSection: Networking.SetOwner(
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1064
-      endSourceChar: 1072
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1369
+      endSourceChar: 1377
+      line: 57
       lineChar: 28
       spanCodeSection: 'player, '
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1072
-      endSourceChar: 1072
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1377
+      endSourceChar: 1377
+      line: 57
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1072
-      endSourceChar: 1072
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1377
+      endSourceChar: 1377
+      line: 57
       lineChar: 36
       spanCodeSection: 
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1072
-      endSourceChar: 1082
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1377
+      endSourceChar: 1387
+      line: 57
       lineChar: 36
       spanCodeSection: scoreData[
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1082
-      endSourceChar: 1082
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1387
+      endSourceChar: 1387
+      line: 57
       lineChar: 46
       spanCodeSection: 
-    - startInstruction: 1748
-      endInstruction: 1747
-      startSourceChar: 1082
-      endSourceChar: 1092
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2571
+      startSourceChar: 1387
+      endSourceChar: 1397
+      line: 57
       lineChar: 46
       spanCodeSection: playerID].
-    - startInstruction: 1748
-      endInstruction: 1748
-      startSourceChar: 1092
-      endSourceChar: 1092
-      line: 47
+    - startInstruction: 2572
+      endInstruction: 2572
+      startSourceChar: 1397
+      endSourceChar: 1397
+      line: 57
       lineChar: 56
       spanCodeSection: 
   hasInteractEvent: 0

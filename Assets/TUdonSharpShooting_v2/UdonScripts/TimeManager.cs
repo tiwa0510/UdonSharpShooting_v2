@@ -9,6 +9,7 @@ public class TimeManager : UdonSharpBehaviour
     [SerializeField] float timeMax;
     [UdonSynced(UdonSyncMode.None)]
     float time;
+    [UdonSynced(UdonSyncMode.None)]
     bool isStart;
 
     void Start()
@@ -53,6 +54,11 @@ public class TimeManager : UdonSharpBehaviour
     public int GetTimeInt()
     {
         return Mathf.FloorToInt(time);
+    }
+
+    public float GetTimeFloor(int n)
+    {
+        return Mathf.Floor(time * Mathf.Pow(10, n)) / Mathf.Pow(10, n);
     }
 
     public bool IsStart()

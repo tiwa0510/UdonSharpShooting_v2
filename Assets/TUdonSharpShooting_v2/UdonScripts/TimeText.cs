@@ -20,7 +20,7 @@ public class TimeText : UdonSharpBehaviour
     {
         if(gameManager.GetTimeManager().IsStart())
         {
-            text.text = gameManager.GetTimeManager().GetTimeInt().ToString();
+            text.text = gameManager.GetTimeManager().GetTimeFloor(2).ToString();
         }
         else
         {
